@@ -4,70 +4,27 @@
     "browser": true,
     "node": true
   },
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint"],
   "extends": [
-    "airbnb",
-    "airbnb/hooks"
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react/recommended",
+    "plugin:react/jsx-runtime",
+    "plugin:react-hooks/recommended",
+    "prettier"
   ],
+  "ignorePatterns": ["webpack.config.js"],
   "rules": {
-    "import/no-extraneous-dependencies": [
-      "error",
-      {
-        "devDependencies": [
-          "**/webpack.*",
-          "test/**/*"
-        ]
-      }
-    ],
-    "max-len": [
-      "warn",
-      {
-        "ignoreUrls": true
-      }
-    ],
-    "sort-imports": "warn"
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/no-inferrable-types": "off"
   },
   "settings": {
-    "import/resolver": {
-      "node": {
-        "extensions": [
-          ".js",
-          ".jsx",
-          ".ts",
-          ".tsx"
-        ]
-      },
-      "webpack": {
-        "config": "./webpack.config.js"
-      }
+    "react": {
+      "version": "detect"
     }
-  },
-  "overrides": [
-    {
-      "files": [
-        "**/*.ts",
-        "**/*.tsx"
-      ],
-      "parser": "@typescript-eslint/parser",
-      "parserOptions": {
-        "project": "./tsconfig.json"
-      },
-      "plugins": [
-        "@typescript-eslint"
-      ],
-      "extends": [
-        "plugin:@typescript-eslint/eslint-recommended",
-        "plugin:@typescript-eslint/recommended",
-        "plugin:@typescript-eslint/recommended-requiring-type-checking"
-      ],
-      "rules": {
-        // This rule is already covered by the TypeScript compiler.
-        "import/default": "off",
-        // This rule is already covered by the TypeScript compiler.
-        "import/no-unresolved": "off",
-        "no-use-before-define": "off",
-        "@typescript-eslint/no-use-before-define": "warn",
-        "react/jsx-filename-extension": "off"
-      }
-    }
-  ]
+  }
 }

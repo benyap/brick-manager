@@ -1,30 +1,31 @@
-.vscode/
-dist/
-node_modules/
-out/
-
-# Logs
+# logs
 logs
 *.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+*.log*
 
-# Yarn Integrity file
-.yarn-integrity
+# tests
+coverage
+*.lcov
+.nyc_output
 
-# Grunt intermediate storage (https://gruntjs.com/creating-plugins#storing-task-files)
-.grunt
+# dependency directories
+node_modules/
+jspm_packages/
 
-# Optional npm cache directory
+# caches
+*.tsbuildinfo
 .npm
-
-# Optional eslint cache
 .eslintcache
 
-# Windows thumbnail cache files
-Thumbs.db
+# dotenv environment variables file
+.env
+.keyfiles
 
-# OS X files
-.DS_Store
-._*
+# build output
+build/
+dist/
+out/
+
+# other
+*.backup
+*.tgz

@@ -1,23 +1,19 @@
 {
   "compilerOptions": {
+    "outDir": "build",
     "allowSyntheticDefaultImports": true,
-    "jsx": "react",
-    "baseUrl": ".",
-    "paths": {
-      "_/*": ["src/*"],
-      "_public/*": ["public/*"],
-      "_main/*": ["src/main/*"],
-      "_models/*": ["src/models/*"],
-      "_renderer/*": ["src/renderer/*"],
-      "_utils/*": ["src/utils/*"]
-    },
-    "module": "commonjs",
+    "jsx": "react-jsx",
+    "module": "CommonJS",
+    "target": "ESNext",
     "moduleResolution": "node",
     "noImplicitAny": true,
     "noImplicitThis": true,
     "strictNullChecks": true,
     "sourceMap": true,
-    "target": "esnext"
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["./src/renderer/*"]
+    }
   },
   "exclude": ["node_modules"]
 }
