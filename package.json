@@ -9,6 +9,7 @@
   "repository": "https://github.com/benyap/brick-manager",
   "bugs": "https://github.com/benyap/brick-manager/issues",
   "scripts": {
+    "gen": "cross-env HYGEN_TMPLS=.templates hygen",
     "format": "prettier 'src/**/*.ts' --write",
     "lint": "eslint 'src/**/*.{ts,tsx}' --fix",
     "test": "mocha -r ts-node/register -r tsconfig-paths/register 'test/**/*.ts'",
@@ -46,9 +47,11 @@
     "buildVersion": "1"
   },
   "dependencies": {
+    "clsx": "1.1.1",
     "electron-context-menu": "3.1.1",
     "electron-store": "8.0.1",
     "electron-util": "0.17.2",
+    "jotai": "1.5.0",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-router": "6.2.1",
@@ -77,10 +80,12 @@
     "eslint": "8.6.0",
     "eslint-config-prettier": "8.3.0",
     "eslint-import-resolver-webpack": "0.13.2",
+    "eslint-plugin-import": "2.25.4",
     "eslint-plugin-react": "7.28.0",
     "eslint-plugin-react-hooks": "4.3.0",
     "file-loader": "6.2.0",
     "html-webpack-plugin": "5.5.0",
+    "hygen": "6.1.0",
     "lodash": "4.17.21",
     "mocha": "9.1.3",
     "postcss": "8.4.5",
