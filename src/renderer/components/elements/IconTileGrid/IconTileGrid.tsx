@@ -3,18 +3,14 @@ import clsx from "clsx";
 import { IconTile, IconTileProps } from "./IconTile";
 
 export interface IconTileGridProps {
+  className?: string;
   tiles?: IconTileProps[];
 }
 
 export function IconTileGrid(props: IconTileGridProps) {
-  const { tiles } = props;
+  const { className, tiles } = props;
   return (
-    <div
-      className={clsx(
-        "grid gap-4 xl:gap-6",
-        "grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 3xl:grid-cols-6 5xl:grid-cols-8"
-      )}
-    >
+    <div className={clsx("flex flex-wrap gap-4", className)}>
       {tiles?.map((tile) => (
         <IconTile key={tile.name} {...tile} />
       ))}

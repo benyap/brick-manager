@@ -2,19 +2,18 @@ import { SideBarItemProps } from "~/components/core/SideBar";
 
 export const sidebar: SideBarItemProps[] = [
   {
-    name: "Home",
-    to: "/",
-  },
-  {
-    name: "Collections",
-    to: "/collections",
+    name: "Inventory",
+    to: "/inventory",
+    icon: "PackageIcon",
   },
   {
     name: "Builds",
     to: "/builds",
+    icon: "PuzzleIcon",
   },
   {
     name: "Database",
     to: "/database",
+    icon: "DatabaseIcon",
   },
 ];

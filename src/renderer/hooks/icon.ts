@@ -19,5 +19,5 @@ export function useIconByName(name?: string, context?: string) {
       });
   }, [name, context]);
 
-  return [iconElement, error];
+  return [iconElement, error] as const;
 }

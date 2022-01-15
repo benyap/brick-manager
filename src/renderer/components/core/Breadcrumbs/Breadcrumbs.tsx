@@ -1,6 +1,7 @@
 import { useMemo } from "react";
 import { useLocation } from "react-router";
 import { Link } from "react-router-dom";
+import clsx from "clsx";
 
 export function Breadcrumbs() {
   const { pathname } = useLocation();
@@ -10,11 +11,15 @@ export function Breadcrumbs() {
 
     const parts: JSX.Element[] = [
       <Link
-        key="home"
+        key="dashboard"
         to="/"
-        className="uppercase tracking-widest text-sm font-medium text-black text-opacity-80 hover:text-opacity-60 transition-all"
+        className={clsx(
+          "uppercase tracking-widest px-1 text-sm font-medium ",
+          "text-lego-navy text-opacity-80 transition-all",
+          "hover:text-opacity-60 rounded bm-focusable ring-2"
+        )}
       >
-        Home
+        Dashboard
       </Link>,
     ];
 
@@ -23,19 +28,25 @@ export function Breadcrumbs() {
     segments.forEach((segment, index) => {
       partialPath += "/" + segment;
       if (index !== segments.length - 1) {
-        parts.push(
-          <Link
-            key={segment}
-            to={partialPath.slice(1)}
-            className="uppercase tracking-widest text-sm font-medium text-black text-opacity-80 hover:text-opacity-60 transition-all"
-          >
-            {segment}
-          </Link>
-        );
+        if (partialPath.slice(1)) {
+          parts.push(
+            <Link
+              key={segment}
+              to={partialPath.slice(1)}
+              className={clsx(
+                "uppercase tracking-widest px-1 text-sm font-medium",
+                "text-lego-navy text-opacity-80 transition-all",
+                "hover:text-opacity-60 rounded bm-focusable ring-2"
+              )}
+            >
+              {segment}
+            </Link>
+          );
+        }
         parts.push(
           <div
             key={segment + "-separator"}
-            className="uppercase tracking-widest text-sm text-black text-opacity-80 font-medium px-3"
+            className="uppercase tracking-widest text-sm text-lego-navy text-opacity-80 font-medium px-3"
           >
             /
           </div>
@@ -44,7 +55,7 @@ export function Breadcrumbs() {
         parts.push(
           <div
             key={segment}
-            className="uppercase tracking-widest text-sm font-bold text-black text-opacity-80"
+            className="uppercase tracking-widest text-sm font-bold text-lego-navy text-opacity-80"
           >
             {segment}
           </div>
@@ -55,5 +66,5 @@ export function Breadcrumbs() {
     return parts;
   }, [pathname]);
 
-  return <div className="flex">{parts}</div>;
+  return <div className="flex px-10 py-8">{parts}</div>;
 }

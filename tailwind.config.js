@@ -16,6 +16,9 @@ module.exports = {
         "lego-red": {
           DEFAULT: "#d01012",
         },
+        "lego-navy": {
+          DEFAULT: "#201d48",
+        },
       },
       fontFamily: {
         sans: ["Inter", ...defaultTheme.fontFamily.sans],

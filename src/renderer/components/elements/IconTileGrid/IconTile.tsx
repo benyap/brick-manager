@@ -18,14 +18,16 @@ export function IconTile(props: IconTileProps) {
     <Link
       to={to}
       className={clsx(
-        "text-lg p-8  h-full rounded min-w-[160px] 2xl:min-h-[200px] shadow-lg",
-        "bg-lego-yellow hover:opacity-80 active:opacity-70 transition-all",
+        "block text-lg w-40 lg:w-48 aspect-square rounded shadow-lg",
+        "bg-lego-yellow hover:opacity-80 transition-all",
         "flex flex-col justify-center items-center text-center",
-        "aspect-square 5xl:aspect-auto"
+        "bm-focusable ring bm-clickable"
       )}
     >
-      <div className="aspect-square w-[64px] mb-2">{iconElement}</div>
-      <h3 className="text-sm lg:text-base">{name}</h3>
+      <div className="aspect-square w-[48px] lg:w-[64px] mb-3 lg:mb-4 text-lego-navy">
+        {iconElement}
+      </div>
+      <h3 className="lg:text-xl font-semibold text-lego-navy">{name}</h3>
     </Link>
   );
 }

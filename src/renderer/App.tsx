@@ -1,29 +1,34 @@
 import { Routes } from "react-router-dom";
 import { HashRouter, Route } from "react-router-dom";
 
-import DashboardView from "~/components/views/DashboardView";
-import DatabaseView from "~/components/views/DatabaseView";
-import DatabaseColorsView from "~/components/views/DatabaseColorsView";
-import CollectionsView from "./components/views/CollectionsView";
-import BuildsView from "./components/views/BuildsView";
+import SideBar from "./components/core/SideBar";
+import SplashScreen from "./components/core/SplashScreen";
+import ResourceProvider from "./components/core/ResourceProvider";
 
-import SideBar from "~/components/core/SideBar";
+import DashboardView from "./components/views/DashboardView";
+import DatabaseView, {
+  PartsView,
+  ColorsView,
+} from "./components/views/DatabaseView";
+import InventoryView from "./components/views/InventoryView";
+import BuildsView from "./components/views/BuildsView";
 
 export function App() {
   return (
     <HashRouter>
-      <Routes>
-        <Route element={<SideBar />}>
-          <Route path="/" element={<DashboardView />}></Route>
-          <Route path="collections" element={<CollectionsView />}></Route>
-          <Route path="builds" element={<BuildsView />}></Route>
-          <Route path="database" element={<DatabaseView />}>
-            <Route path="colors" element={<DatabaseColorsView />} />
-            <Route path="categories" element={<div />} />
-            <Route path="parts" element={<div />} />
+      <ResourceProvider loadingScreen={<SplashScreen />}>
+        <Routes>
+          <Route element={<SideBar />}>
+            <Route path="/" element={<DashboardView />}></Route>
+            <Route path="inventory" element={<InventoryView />}></Route>
+            <Route path="builds" element={<BuildsView />}></Route>
+            <Route path="database" element={<DatabaseView />}>
+              <Route path="parts" element={<PartsView />} />
+              <Route path="colors" element={<ColorsView />} />
+            </Route>
           </Route>
-        </Route>
-      </Routes>
+        </Routes>
+      </ResourceProvider>
     </HashRouter>
   );
 }

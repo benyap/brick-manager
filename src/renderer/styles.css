@@ -4,4 +4,21 @@
 
 @layer base {
   @import url("https://rsms.me/inter/inter.css");
+
+  body {
+    @apply bg-slate-50;
+  }
+
+  .bm-clickable {
+    @apply hover:-translate-y-0.5 active:translate-y-0;
+  }
+
+  /** Requires a "ring" class to be present **/
+  .bm-focusable {
+    @apply ring-lego-navy ring-opacity-0 focus:ring-opacity-80 active:ring-opacity-80 focus:outline-none;
+  }
+
+  .bm-focusable-input {
+    @apply focus:outline-lego-navy focus:outline-offset-0 focus:outline-2 focus:border-lego-navy;
+  }
 }
