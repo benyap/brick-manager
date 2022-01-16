@@ -1,6 +1,7 @@
 import { useMemo, useState } from "react";
+import { Transition } from "@headlessui/react";
 
-import { ICategory, IPart } from "~/models";
+import { ICategory, IPartWithColors } from "~/models";
 import { useParts } from "~/hooks/data";
 
 import ViewTitle from "~/components/core/ViewTitle";
@@ -18,14 +19,23 @@ export function PartsView() {
   const parts = useParts(search);
 
   const [compact, setCompact] = useState(true);
-  const [selected, setSelected] = useState<IPart>();
   const [category, setCategory] = useState<ICategory>();
+
+  const [show, setShow] = useState(false);
+  const [selected, setSelected] = useState<IPartWithColors>();
 
   const rows = useMemo(
     () =>
       parts
-        .filter((part) => !category || part.categoryId == category.id)
-        .map((part) => ({ part, compact, onClick: setSelected })),
+        .filter(({ part }) => !category || part.categoryId == category.id)
+        .map((data) => ({
+          part: data.part,
+          compact,
+          onClick: () => {
+            setSelected(data);
+            setShow(true);
+          },
+        })),
     [parts, compact, category]
   );
 
@@ -60,7 +70,23 @@ export function PartsView() {
             {PartItem}
           </VirtualizedList>
         </div>
-        {selected && <PartPanel className="mb-9" part={selected} />}
+        <Transition
+          show={show}
+          className="mt-8 mb-9 w-1/2 flex-shrink-0 lg:flex-shrink lg:w-2/3 max-w-[50%] self-stretch"
+          enter="transition-all ease-out duration-75"
+          enterFrom="opacity-0 translate-x-80"
+          enterTo="opacity-100 translate-x-0"
+          leave="transition-all ease-in duration-100"
+          leaveFrom="opacity-100 translate-x-0"
+          leaveTo="opacity-0 translate-x-80"
+        >
+          <PartPanel
+            className="mb-9"
+            part={selected?.part}
+            colors={selected?.colors}
+            onClose={() => setShow(false)}
+          />
+        </Transition>
       </div>
     </main>
   );

@@ -42,6 +42,7 @@ async function main() {
     }
   }
 
+  // Get part data
   for (const { part_num, name, part_img_url, external_ids } of filteredPartsData) {
     const { BrickLink = [], LEGO } = external_ids;
     const match = Object.keys(BrickLink).find((id) => id in brickLinkPartsById);
@@ -73,9 +74,8 @@ async function main() {
       });
     }
   }
-
-  const sortedParts = parts.sort(
-    (a, b) => Number(a.categoryId) - Number(b.categoryId)
+  const sortedParts = parts.sort((a, b) =>
+    categories[a.categoryId].name.localeCompare(categories[b.categoryId].name)
   );
 
   const sortedCategories = Object.values(categories).sort((a, b) =>

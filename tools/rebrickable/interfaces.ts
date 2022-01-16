@@ -35,3 +35,12 @@ export interface RebrickablePart {
   external_ids: VendorMap<string[]>;
   print_of: string;
 }
+
+export interface RebrickablePartColor {
+  color_id: number;
+  color_name: string;
+  num_sets: number;
+  num_set_parts: number;
+  part_img_url?: string;
+  elements: string[];
+}

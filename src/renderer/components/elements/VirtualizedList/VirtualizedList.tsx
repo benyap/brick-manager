@@ -11,6 +11,8 @@ export interface VirtualizedListProps<T> {
  * NOTE: this component causes some rendering issues when used with
  * the `Transition` component from `@headless-ui/react`. Avoid using
  * this component where there are transitions involved.
+ *
+ * TODO: add better keyboard navigation support
  */
 export function VirtualizedList<T>(props: VirtualizedListProps<T>) {
   const { data, rowHeight, children } = props;

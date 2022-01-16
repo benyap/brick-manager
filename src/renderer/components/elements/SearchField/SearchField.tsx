@@ -58,6 +58,7 @@ export function SearchField(props: SearchFieldProps) {
         />
         {value && (
           <button
+            type="reset"
             onClick={() => {
               onChange?.("");
               ref.current?.focus();

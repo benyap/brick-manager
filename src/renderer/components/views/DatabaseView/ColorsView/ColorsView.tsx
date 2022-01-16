@@ -1,4 +1,5 @@
 import { useMemo, useState } from "react";
+import { Transition } from "@headlessui/react";
 
 import { IColor } from "~/models";
 import { useColors } from "~/hooks/data";
@@ -17,10 +18,20 @@ export function ColorsView() {
   const colors = useColors(search);
 
   const [compact, setCompact] = useState(true);
+
+  const [show, setShow] = useState(false);
   const [selected, setSelected] = useState<IColor>();
 
   const rows = useMemo(
-    () => colors.map((color) => ({ color, compact, onClick: setSelected })),
+    () =>
+      colors.map((color) => ({
+        color,
+        compact,
+        onClick: () => {
+          setSelected(color);
+          setShow(true);
+        },
+      })),
     [colors, compact]
   );
 
@@ -50,7 +61,18 @@ export function ColorsView() {
             {ColorItem}
           </VirtualizedList>
         </div>
-        <ColorPanel className="mb-9" color={selected} />
+        <Transition
+          show={show}
+          className="mt-8 mb-9 w-1/2 flex-shrink-0 lg:flex-shrink lg:w-2/3 max-w-[50%] self-stretch"
+          enter="transition-all ease-out duration-75"
+          enterFrom="opacity-0 translate-x-80"
+          enterTo="opacity-100 translate-x-0"
+          leave="transition-all ease-in duration-100"
+          leaveFrom="opacity-100 translate-x-0"
+          leaveTo="opacity-0 translate-x-80"
+        >
+          <ColorPanel color={selected} onClose={() => setShow(false)} />
+        </Transition>
       </div>
     </main>
   );

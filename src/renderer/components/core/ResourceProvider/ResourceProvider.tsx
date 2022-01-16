@@ -2,7 +2,7 @@ import { createContext, useContext, useEffect, useState } from "react";
 import { Transition } from "@headlessui/react";
 import Fuse from "fuse.js";
 
-import { IPart, ICategory, IColor } from "~/models";
+import { ICategory, IColor, IPartWithColors } from "~/models";
 
 import { loadParts } from "./loaders/parts";
 import { loadCategories } from "./loaders/categories";
@@ -10,17 +10,18 @@ import { loadColors } from "./loaders/colors";
 
 export interface IResource {
   parts?: {
-    data: IPart[];
-    search: Fuse<{ item: IPart }>;
+    data: IPartWithColors[];
+    search: Fuse<IPartWithColors>;
   };
   categories?: {
     data: ICategory[];
-    byId: Record<string, ICategory>;
+    byId: { [id: string]: ICategory };
     search: Fuse<ICategory>;
   };
   colors?: {
     data: IColor[];
-    search: Fuse<{ item: IColor }>;
+    byId: { [id: string]: IColor };
+    search: Fuse<{ color: IColor }>;
   };
 }
 
@@ -57,9 +58,9 @@ export function ResourceProvider(props: ResourceProviderProps) {
       state.colors = await loadColors();
       setState(state);
     }
-    Promise.allSettled([
+    Promise.all([
       load(),
-      new Promise((resolve) => setTimeout(resolve, DEV ? minimumWait : minimumWait)),
+      new Promise((resolve) => setTimeout(resolve, DEV ? 0 : minimumWait)),
     ]).then(() => setLoading(false));
   }, [state, minimumWait]);
 
@@ -73,14 +74,17 @@ export function ResourceProvider(props: ResourceProviderProps) {
       >
         {loadingScreen}
       </Transition>
-      <Transition
-        show={!loading}
-        enter="transition-opacity duration-500"
-        enterFrom="opacity-0"
-        enterTo="opacity-100"
-      >
-        {children}
-      </Transition>
+      {!loading && (
+        <Transition
+          show
+          appear
+          enter="transition-opacity duration-500"
+          enterFrom="opacity-0"
+          enterTo="opacity-100"
+        >
+          {children}
+        </Transition>
+      )}
     </ResourceContext.Provider>
   );
 }

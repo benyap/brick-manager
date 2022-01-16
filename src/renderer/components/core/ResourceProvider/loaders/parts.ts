@@ -1,6 +1,7 @@
 import Fuse from "fuse.js";
 
-import { IPart } from "~/models";
+import { IPart, IPartColors } from "~/models";
+import { keyBy } from "~/utils/transform";
 
 export function getTags({ name, externalIds }: IPart) {
   const { BrickLink: BrickLinkIds = [], LEGO: LEGOIds = [] } = externalIds;
@@ -12,11 +13,26 @@ export function getTags({ name, externalIds }: IPart) {
 }
 
 export async function loadParts() {
-  const data = (await import("~/data/parts.json")) as IPart[];
+  const partData = await import("~/data/parts.json");
+  const colorData = await import("~/data/part-colors.json");
+
+  const parts = partData.default as IPart[];
+  const colors = colorData.default as IPartColors[];
+  const colorsByPartId = keyBy(colors, "partId");
+
+  const partsWithColors = parts.map((part) => ({
+    part,
+    colors: colorsByPartId[part.id]?.colors,
+  }));
+
   return {
-    data,
+    data: partsWithColors,
     search: new Fuse(
-      data.map((item) => ({ item, tags: getTags(item) })),
+      partsWithColors.map(({ part, colors }) => ({
+        part,
+        colors,
+        tags: getTags(part),
+      })),
       {
         keys: [
           { name: "tags.BrickLinkIds", weight: 1.0 },

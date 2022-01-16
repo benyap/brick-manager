@@ -2,13 +2,16 @@ import clsx from "clsx";
 
 import { IColor, Vendor } from "~/models";
 
+import PanelCloseButton from "~/components/core/PanelCloseButton";
+
 export interface ColorPanelProps {
   className?: string;
   color?: IColor;
+  onClose?: () => void;
 }
 
 export function ColorPanel(props: ColorPanelProps) {
-  const { className, color } = props;
+  const { className, color, onClose } = props;
   const { name, material, rgb, externalIds = {}, externalNames = {} } = color ?? {};
 
   const bestName = externalNames?.BrickLink?.[0] ?? externalNames?.LEGO?.[0] ?? name;
@@ -17,8 +20,7 @@ export function ColorPanel(props: ColorPanelProps) {
     <div
       className={clsx(
         className,
-        "mt-8 rounded shadow-md w-1/2 flex-shrink-0 lg:flex-shrink lg:w-2/3 bg-white p-6 max-w-[50%]",
-        { hidden: !color }
+        "bg-white p-6 rounded-md shadow-md h-full flex flex-col justify-between"
       )}
     >
       <div className="flex flex-col-reverse lg:flex-row justify-between">
@@ -59,6 +61,7 @@ export function ColorPanel(props: ColorPanelProps) {
           );
         })}
       </div>
+      {onClose && <PanelCloseButton onClose={onClose} />}
     </div>
   );
 }

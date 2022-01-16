@@ -1,12 +1,13 @@
 {
   "compilerOptions": {
     "outDir": "build",
-    "allowSyntheticDefaultImports": true,
     "jsx": "react-jsx",
     "module": "CommonJS",
     "target": "ESNext",
     "moduleResolution": "node",
     "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
     "noImplicitAny": true,
     "noImplicitThis": true,
     "strictNullChecks": true,

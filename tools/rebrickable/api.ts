@@ -5,6 +5,7 @@ import {
   RebrickableColor,
   RebrickablePart,
   RebrickablePartCategory,
+  RebrickablePartColor,
 } from "./interfaces";
 
 export type PaginatedRequestOptions = {
@@ -42,6 +43,24 @@ export class RebrickableAPI {
     return query;
   }
 
+  private async retry<T>(
+    promise: () => Promise<T>,
+    options: { attemptLimit?: number; delay?: number } = {}
+  ) {
+    const { attemptLimit = 10, delay = 1111 } = options;
+    let attempts = 0;
+    while (attempts < attemptLimit) {
+      attempts++;
+      try {
+        if (attempts !== 1) console.log(`Retrying (${attempts})...`);
+        return await promise();
+      } catch (error) {
+        await new Promise((resolve) => setTimeout(resolve, delay));
+      }
+    }
+    throw new Error(`Failed after ${attempts} attempts`);
+  }
+
   async getAllPages<T>(
     request: (options: PaginatedRequestOptions) => Promise<PaginatedResponse<T>>,
     pageSize: number = 1000
@@ -72,17 +91,15 @@ export class RebrickableAPI {
   async colors(
     options: PaginatedRequestOptions = {}
   ): Promise<PaginatedResponse<RebrickableColor>> {
-    const response = await this.api.get<PaginatedResponse<RebrickableColor>>(
-      `/colors?${this.createPaginatedQuery(options).toString()}`
-    );
-    return response.data;
+    const url = `/colors?${this.createPaginatedQuery(options).toString()}`;
+    const res = await this.api.get<PaginatedResponse<RebrickableColor>>(url);
+    return res.data;
   }
 
   async partCategories(options: PaginatedRequestOptions = {}) {
-    const response = await this.api.get<PaginatedResponse<RebrickablePartCategory>>(
-      `/part_categories?${this.createPaginatedQuery(options).toString()}`
-    );
-    return response.data;
+    const url = `/part_categories?${this.createPaginatedQuery(options).toString()}`;
+    const res = await this.api.get<PaginatedResponse<RebrickablePartCategory>>(url);
+    return res.data;
   }
 
   async parts(
@@ -121,9 +138,19 @@ export class RebrickableAPI {
     if (typeof ldrawId === "string") query.append("ldraw_id", ldrawId);
     if (typeof search === "string") query.append("search", search);
 
-    const response = await this.api.get<PaginatedResponse<RebrickablePart>>(
-      `/parts?${query.toString()}`
+    const url = `/parts?${query.toString()}`;
+    const res = await this.retry(() =>
+      this.api.get<PaginatedResponse<RebrickablePart>>(url)
     );
-    return response.data;
+    return res.data;
+  }
+
+  async partColors(partNum: string, options: PaginatedRequestOptions = {}) {
+    const query = this.createPaginatedQuery(options);
+    const url = `parts/${partNum}/colors?${query.toString()}`;
+    const res = await this.retry(() =>
+      this.api.get<PaginatedResponse<RebrickablePartColor>>(url)
+    );
+    return res.data;
   }
 }

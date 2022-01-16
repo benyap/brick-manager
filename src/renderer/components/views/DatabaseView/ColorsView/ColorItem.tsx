@@ -1,5 +1,5 @@
-import clsx from "clsx";
 import { ListChildComponentProps } from "react-window";
+import clsx from "clsx";
 
 import { IColor, Vendor } from "~/models";
 
