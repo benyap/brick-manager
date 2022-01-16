@@ -27,26 +27,6 @@
     "make:win": "electron-builder build --win --x64",
     "release": "yarn format && yarn lint && yarn build && yarn make && env-cmd release-it"
   },
-  "build": {
-    "appId": "com.benyap.brick-manager",
-    "productName": "Brick Manager",
-    "directories": {
-      "app": "./build/",
-      "output": "./dist/"
-    },
-    "mac": {
-      "target": "dmg"
-    },
-    "win": {
-      "target": "nsis",
-      "asar": true
-    },
-    "nsis": {
-      "oneClick": false,
-      "allowToChangeInstallationDirectory": true
-    },
-    "buildVersion": "1"
-  },
   "dependencies": {
     "@headlessui/react": "1.4.3",
     "clsx": "1.1.1",
