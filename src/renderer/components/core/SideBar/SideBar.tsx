@@ -51,7 +51,7 @@ export function SideBar() {
           </p>
         </div>
       </aside>
-      <div className="w-full h-screen overflow-scroll min-w-[560px]">
+      <div className="w-full h-screen overflow-x-hidden overflow-y-auto min-w-[560px]">
         <Outlet />
       </div>
     </div>

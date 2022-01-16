@@ -23,7 +23,7 @@ export function ColorItem(props: ListChildComponentProps<ColorItemProps[]>) {
     <div style={style} className="p-2">
       <button
         className={clsx(
-          "flex bg-white shadow-md w-full overflow-scroll text-left transition-all",
+          "flex bg-white shadow-md w-full text-left transition-all",
           "hover:opacity-90 hover:cursor-pointer bm-clickable ring bm-focusable",
           {
             "p-4 rounded-lg": !compact,
@@ -54,9 +54,16 @@ export function ColorItem(props: ListChildComponentProps<ColorItemProps[]>) {
             <span>{bestName}</span>
             {compact && (
               <span className="text-base font-normal text-lego-navy text-opacity-70 hidden lg:block">
-                <b>BrickLink</b>&nbsp;{brickLinkId ?? "-"}
-                <span className="p-2" />
-                <b>LEGO</b>&nbsp;{legoId ?? "-"}
+                {brickLinkId && (
+                  <span className="last:pr-0 pr-4">
+                    <b>BrickLink</b> {brickLinkId}
+                  </span>
+                )}
+                {legoId && (
+                  <span>
+                    <b>LEGO</b> {legoId}
+                  </span>
+                )}
               </span>
             )}
           </h3>

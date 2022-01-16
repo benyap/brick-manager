@@ -64,8 +64,8 @@ export function PartsView() {
           />
         </div>
       </div>
-      <div className="flex gap-8">
-        <div className="my-5 -mx-4 overflow-scroll h-[calc(100vh-246px)] w-[calc(100%+32px)] p-2">
+      <div className="flex gap-8 h-[calc(100vh-206px)]">
+        <div className="my-5 -mx-4 p-2 w-[calc(100%+32px)]">
           <VirtualizedList data={rows} rowHeight={compact ? 72 : 144}>
             {PartItem}
           </VirtualizedList>

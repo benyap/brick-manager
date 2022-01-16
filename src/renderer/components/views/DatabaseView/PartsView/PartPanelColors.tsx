@@ -22,12 +22,7 @@ export function PartPanelColors(props: PartPanelColorsProps) {
         const color = colors.byId[colorId];
         const image = partColors[colorId] ?? "";
         return (
-          <Tooltip
-            key={colorId}
-            title={color.name}
-            position="below"
-            className="mt-2"
-          >
+          <Tooltip key={colorId} title={color.name} position="above">
             <button
               className={clsx("h-8 w-8 rounded border border-slate-200", {
                 "bm-focusable ring-2": image,

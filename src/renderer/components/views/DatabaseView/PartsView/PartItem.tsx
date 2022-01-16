@@ -20,7 +20,7 @@ export function PartItem(props: ListChildComponentProps<PartItemProps[]>) {
     <div style={style} className="p-2">
       <button
         className={clsx(
-          "flex bg-white shadow-md w-full overflow-scroll text-left transition-all",
+          "flex bg-white shadow-md w-full text-left transition-all",
           "hover:opacity-90 hover:cursor-pointer bm-clickable ring bm-focusable",
           {
             "p-5 rounded-lg": !compact,
