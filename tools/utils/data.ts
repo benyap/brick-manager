@@ -1,6 +1,6 @@
 import { readFileSync, writeFileSync } from "fs";
 
-export const DATA_ROOT = "src/renderer/data";
+export const DATA_ROOT = "data";
 
 function getDataPath(path: string) {
   return `${DATA_ROOT}/${path}`;

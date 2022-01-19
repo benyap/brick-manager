@@ -1,25 +1,22 @@
 import Fuse from "fuse.js";
 
 import { IColor } from "~/models";
+import { loadJSONData } from "~/utils/data";
 import { keyBy } from "~/utils/transform";
 
-export function getTags({ externalIds, externalNames }: IColor) {
-  const { BrickLink: BrickLinkIds = [], LEGO: LEGOIds = [] } = externalIds;
-  const { BrickLink: BricklinkNames = [], LEGO: LEGONames = [] } = externalNames;
+export function getTags({ identifiers = {} }: IColor) {
+  const { BrickLink = [], LEGO = [] } = identifiers;
   return {
-    BrickLinkIds,
-    BricklinkNames,
-    LEGOIds,
-    LEGONames,
+    BrickLinkIds: BrickLink.map(({ id }) => id),
+    BricklinkNames: BrickLink.map(({ name }) => name),
+    LEGOIds: LEGO.map(({ id }) => id),
+    LEGONames: LEGO.map(({ name }) => name),
   };
 }
 
 export async function loadColors() {
-  const data = await import("~/data/colors.json");
-
-  const colors = data.default as IColor[];
+  const colors = await loadJSONData<IColor[]>("colors.json");
   const colorsById = keyBy(colors, "id");
-
   return {
     data: colors,
     byId: colorsById,

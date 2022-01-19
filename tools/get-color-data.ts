@@ -1,6 +1,5 @@
 import { Vendor, IColor, VendorMap } from "~/models";
 
-import { unique } from "./utils/list";
 import { writeData } from "./utils/data";
 import { RebrickableAPI } from "./rebrickable/api";
 import { RebrickableColorIdentifier } from "./rebrickable/interfaces";
@@ -29,19 +28,34 @@ async function main() {
     .filter(({ external_ids }) => external_ids.BrickLink || external_ids.LEGO)
     .map<IColor>(({ id, name, external_ids, is_trans, rgb }) => {
       const BrickLink = getVendorColorInfo("BrickLink", external_ids);
+      const brickLinkIdentifiers = BrickLink?.ids?.reduce((map, id, index) => {
+        const name = BrickLink?.names?.[index];
+        if (name) map[id] = name;
+        return map;
+      }, {} as Record<string, string>);
+
       const LEGO = getVendorColorInfo("LEGO", external_ids);
+      const legoIdentifiers = LEGO?.ids?.reduce((map, id, index) => {
+        const name = LEGO?.names?.[index];
+        if (name) map[id] = name;
+        return map;
+      }, {} as Record<string, string>);
+
       return {
         id: String(id),
         name: BrickLink?.names[0] ?? LEGO?.names[0] ?? name,
         material: is_trans ? "transparent" : "solid",
         rgb: `#${rgb}`,
-        externalIds: {
-          BrickLink: unique(BrickLink?.ids),
-          LEGO: unique(LEGO?.ids),
-        },
-        externalNames: {
-          BrickLink: unique(BrickLink?.names),
-          LEGO: unique(LEGO?.names),
+        identifiers: {
+          BrickLink: brickLinkIdentifiers
+            ? Object.entries(brickLinkIdentifiers).map(([id, name]) => ({
+                id,
+                name,
+              }))
+            : undefined,
+          LEGO: legoIdentifiers
+            ? Object.entries(legoIdentifiers).map(([id, name]) => ({ id, name }))
+            : undefined,
         },
       };
     })

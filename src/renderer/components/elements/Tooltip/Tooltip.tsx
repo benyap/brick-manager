@@ -67,6 +67,7 @@ export function Tooltip(props: TooltipProps) {
   const tooltip = useRef<HTMLDivElement>(null);
 
   function showTooltip() {
+    if (!title) return;
     if (!tooltip.current || !target.current || !tooltip.current) return;
 
     tooltip.current.style.display = "block";

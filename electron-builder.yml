@@ -1,15 +1,22 @@
-appId: "com.benyap.brick-manager"
-productName: "Brick Manager"
+appId: com.benyap.brick-manager
+productName: Brick Manager
+
 directories:
   app: build
   output: dist
+
+extraResources:
+  - data
+
 mac:
   category: public.app-category.productivity
   target: dmg
   icon: assets/brick-manager.icns
+
 win:
   target: nsis
   icon: assets/brick-manager.ico
+
 nsis:
   installerIcon: assets/brick-manager.ico
   oneClick: false

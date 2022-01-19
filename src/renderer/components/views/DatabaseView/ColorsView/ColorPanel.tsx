@@ -6,15 +6,15 @@ import PanelCloseButton from "~/components/core/PanelCloseButton";
 
 export interface ColorPanelProps {
   className?: string;
-  color?: IColor;
+  color?: IColor | null;
   onClose?: () => void;
 }
 
 export function ColorPanel(props: ColorPanelProps) {
   const { className, color, onClose } = props;
-  const { name, material, rgb, externalIds = {}, externalNames = {} } = color ?? {};
+  const { name, material, rgb, identifiers = {} } = color ?? {};
 
-  const bestName = externalNames?.BrickLink?.[0] ?? externalNames?.LEGO?.[0] ?? name;
+  const identifier = identifiers?.BrickLink?.[0] ?? identifiers?.LEGO?.[0];
 
   return (
     <div
@@ -28,7 +28,7 @@ export function ColorPanel(props: ColorPanelProps) {
         <div className="flex flex-col-reverse lg:flex-row justify-between">
           <div className="mb-4">
             <h2 className="font-bold text-4xl lg:text-5xl text-lego-navy mb-1">
-              {bestName}
+              {identifier?.name ?? name}
             </h2>
             <p className="text-lego-navy text-opacity-60 text-xl lg:text-2xl font-semibold">
               {rgb}
@@ -40,19 +40,11 @@ export function ColorPanel(props: ColorPanelProps) {
           />
         </div>
         <div className="grid gap-5">
-          {externalIds["BrickLink"] && (
-            <VendorIDDisplay
-              name="BrickLink"
-              ids={externalIds["BrickLink"]}
-              names={externalNames["BrickLink"]}
-            />
+          {identifiers?.BrickLink && (
+            <VendorIDs name="BrickLink" identifiers={identifiers.BrickLink} />
           )}
-          {externalIds["LEGO"] && (
-            <VendorIDDisplay
-              name="LEGO"
-              ids={externalIds["LEGO"]}
-              names={externalNames["LEGO"]}
-            />
+          {identifiers?.LEGO && (
+            <VendorIDs name="LEGO" identifiers={identifiers.LEGO} />
           )}
         </div>
       </div>
@@ -61,8 +53,11 @@ export function ColorPanel(props: ColorPanelProps) {
   );
 }
 
-function VendorIDDisplay(props: { name: string; ids?: string[]; names?: string[] }) {
-  const { name, ids, names } = props;
+function VendorIDs(props: {
+  name: string;
+  identifiers?: { id: string; name: string }[];
+}) {
+  const { name, identifiers } = props;
   return (
     <div>
       <h3 className="text-lego-navy text-opacity-90 font-semibold lg:text-lg lg:mb-1">
@@ -70,13 +65,13 @@ function VendorIDDisplay(props: { name: string; ids?: string[]; names?: string[]
       </h3>
       <table>
         <tbody>
-          {ids?.map((id, index) => (
+          {identifiers?.map(({ id, name }) => (
             <tr
               key={id}
               className="text-lego-navy text-opacity-90 text-sm lg:text-base"
             >
               <td className="min-w-[40px] lg:min-w-[48px]">{id}</td>
-              <td>{names?.[index]}</td>
+              <td>{name}</td>
             </tr>
           ))}
         </tbody>

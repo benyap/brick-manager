@@ -1,23 +1,21 @@
 import Fuse from "fuse.js";
 
 import { IPart, IPartColors } from "~/models";
+import { loadJSONData } from "~/utils/data";
 import { keyBy } from "~/utils/transform";
 
-export function getTags({ name, externalIds }: IPart) {
-  const { BrickLink: BrickLinkIds = [], LEGO: LEGOIds = [] } = externalIds;
+export function getTags({ name, identifiers = {} }: IPart) {
+  const { BrickLink = [], LEGO = [] } = identifiers;
   return {
     name,
-    BrickLinkIds,
-    LEGOIds,
+    BrickLinkIds: BrickLink,
+    LEGOIds: LEGO,
   };
 }
 
 export async function loadParts() {
-  const partData = await import("~/data/parts.json");
-  const colorData = await import("~/data/part-colors.json");
-
-  const parts = partData.default as IPart[];
-  const colors = colorData.default as IPartColors[];
+  const parts = await loadJSONData<IPart[]>("parts.json");
+  const colors = await loadJSONData<IPartColors[]>("part-colors.json");
   const colorsByPartId = keyBy(colors, "partId");
 
   const partsWithColors = parts.map((part) => ({

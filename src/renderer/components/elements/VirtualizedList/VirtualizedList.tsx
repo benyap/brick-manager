@@ -2,6 +2,7 @@ import AutoSizer from "react-virtualized-auto-sizer";
 import { FixedSizeList, ListChildComponentProps } from "react-window";
 
 export interface VirtualizedListProps<T> {
+  listRef?: React.LegacyRef<FixedSizeList<T[]>>;
   data: T[];
   rowHeight: number;
   children: (props: ListChildComponentProps<T[]>) => JSX.Element;
@@ -15,11 +16,12 @@ export interface VirtualizedListProps<T> {
  * TODO: add better keyboard navigation support
  */
 export function VirtualizedList<T>(props: VirtualizedListProps<T>) {
-  const { data, rowHeight, children } = props;
+  const { listRef, data, rowHeight, children } = props;
   return (
     <AutoSizer>
       {({ width, height }) => (
         <FixedSizeList
+          ref={listRef}
           itemCount={data.length}
           itemData={data}
           itemSize={rowHeight}

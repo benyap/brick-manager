@@ -1,11 +1,12 @@
-import { VendorMap } from "./Vendor";
+import { VendorMap, Vendor } from "./Vendor";
 
 export interface IPart {
   id: string;
   name: string;
   image?: string;
   categoryId: string;
-  externalIds: VendorMap<string[]>;
+  source?: Vendor;
+  identifiers?: VendorMap<string[]>;
 }
 
 export interface IPartWithColors {
@@ -17,6 +18,7 @@ export interface ICategory {
   id: string;
   name: string;
   count: number;
+  sources: VendorMap<number>;
 }
 
 export interface IPartColors {

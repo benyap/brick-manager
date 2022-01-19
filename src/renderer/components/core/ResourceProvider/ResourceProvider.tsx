@@ -64,6 +64,11 @@ export function ResourceProvider(props: ResourceProviderProps) {
     ]).then(() => setLoading(false));
   }, [state, minimumWait]);
 
+  useEffect(() => {
+    if (loading) return;
+    document.body.classList.add("ready");
+  }, [loading]);
+
   return (
     <ResourceContext.Provider value={state ?? {}}>
       <Transition

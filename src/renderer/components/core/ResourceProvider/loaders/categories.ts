@@ -1,10 +1,10 @@
 import Fuse from "fuse.js";
 
 import { ICategory } from "~/models";
+import { loadJSONData } from "~/utils/data";
 
 export async function loadCategories() {
-  const data = await import("~/data/categories.json");
-  const categories = data.default as ICategory[];
+  const categories = await loadJSONData<ICategory[]>("categories.json");
 
   const byId = categories.reduce((map, category) => {
     map[category.id] = category;

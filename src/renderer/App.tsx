@@ -19,7 +19,7 @@ export function App() {
       <ResourceProvider loadingScreen={<SplashScreen />}>
         <Routes>
           <Route element={<SideBar />}>
-            <Route path="/" element={<DashboardView />}></Route>
+            <Route path="/" element={<DashboardView />} />
             <Route path="inventory" element={<InventoryView />}></Route>
             <Route path="builds" element={<BuildsView />}></Route>
             <Route path="database" element={<DatabaseView />}>

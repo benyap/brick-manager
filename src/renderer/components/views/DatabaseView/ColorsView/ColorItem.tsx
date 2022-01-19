@@ -13,11 +13,11 @@ export function ColorItem(props: ListChildComponentProps<ColorItemProps[]>) {
   const { index, data, style } = props;
 
   const { color, onClick, compact } = data[index];
-  const { name, material, rgb, externalNames, externalIds } = color;
+  const { name, material, rgb, identifiers = {} } = color;
 
-  const bestName = externalNames.BrickLink?.[0] ?? externalNames.LEGO?.[0] ?? name;
-  const brickLinkId = externalIds.BrickLink?.[0];
-  const legoId = externalIds.LEGO?.[0];
+  const identifier = identifiers.BrickLink?.[0] ?? identifiers.LEGO?.[0];
+  const brickLinkId = identifiers.BrickLink?.[0].id;
+  const legoId = identifiers.LEGO?.[0].id;
 
   return (
     <div style={style} className="p-2">
@@ -51,7 +51,7 @@ export function ColorItem(props: ListChildComponentProps<ColorItemProps[]>) {
               "text-lg flex justify-between items-center": compact,
             })}
           >
-            <span>{bestName}</span>
+            <span>{identifier?.name ?? name}</span>
             {compact && (
               <span className="text-base font-normal text-lego-navy text-opacity-70 hidden lg:block">
                 {brickLinkId && (
@@ -74,7 +74,7 @@ export function ColorItem(props: ListChildComponentProps<ColorItemProps[]>) {
                   key={vendor}
                   className="text-lego-navy text-opacity-80 text-sm lg:text-base"
                 >
-                  <b>{vendor}</b>&nbsp;{externalIds[vendor]?.[0]}
+                  <b>{vendor}</b>&nbsp;{identifiers[vendor]?.[0].id}
                 </div>
               ))}
             </div>

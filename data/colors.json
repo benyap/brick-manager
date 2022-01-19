@@ -1,0 +1,3452 @@
+[
+  {
+    "id": "0",
+    "name": "Black",
+    "material": "solid",
+    "rgb": "#05131D",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "11",
+          "name": "Black"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "26",
+          "name": "Black"
+        },
+        {
+          "id": "149",
+          "name": "Metallic Black"
+        },
+        {
+          "id": "1012",
+          "name": "CONDUCT. BLACK"
+        }
+      ]
+    }
+  },
+  {
+    "id": "1",
+    "name": "Blue",
+    "material": "solid",
+    "rgb": "#0055BF",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "7",
+          "name": "Blue"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "23",
+          "name": "Bright Blue"
+        },
+        {
+          "id": "185",
+          "name": "Metallic Bright Blue"
+        }
+      ]
+    }
+  },
+  {
+    "id": "2",
+    "name": "Green",
+    "material": "solid",
+    "rgb": "#237841",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "6",
+          "name": "Green"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "28",
+          "name": "Dark green"
+        },
+        {
+          "id": "186",
+          "name": "Metallic Dark Green"
+        }
+      ]
+    }
+  },
+  {
+    "id": "3",
+    "name": "Dark Turquoise",
+    "material": "solid",
+    "rgb": "#008F9B",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "39",
+          "name": "Dark Turquoise"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "107",
+          "name": "Bright bluish green"
+        }
+      ]
+    }
+  },
+  {
+    "id": "4",
+    "name": "Red",
+    "material": "solid",
+    "rgb": "#C91A09",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "5",
+          "name": "Red"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "21",
+          "name": "Bright red"
+        },
+        {
+          "id": "184",
+          "name": "Metallic Bright Red"
+        }
+      ]
+    }
+  },
+  {
+    "id": "5",
+    "name": "Dark Pink",
+    "material": "solid",
+    "rgb": "#C870A0",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "47",
+          "name": "Dark Pink"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "221",
+          "name": "Bright Purple"
+        }
+      ]
+    }
+  },
+  {
+    "id": "6",
+    "name": "Brown",
+    "material": "solid",
+    "rgb": "#583927",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "8",
+          "name": "Brown"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "25",
+          "name": "Earth Orange"
+        },
+        {
+          "id": "187",
+          "name": "Sand Yellow Metallic"
+        },
+        {
+          "id": "217",
+          "name": "Brown"
+        }
+      ]
+    }
+  },
+  {
+    "id": "7",
+    "name": "Light Gray",
+    "material": "solid",
+    "rgb": "#9BA19D",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "9",
+          "name": "Light Gray"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "2",
+          "name": "Grey"
+        }
+      ]
+    }
+  },
+  {
+    "id": "8",
+    "name": "Dark Gray",
+    "material": "solid",
+    "rgb": "#6D6E5C",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "10",
+          "name": "Dark Gray"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "27",
+          "name": "Dark grey"
+        }
+      ]
+    }
+  },
+  {
+    "id": "9",
+    "name": "Light Blue",
+    "material": "solid",
+    "rgb": "#B4D2E3",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "62",
+          "name": "Light Blue"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "45",
+          "name": "Light blue"
+        }
+      ]
+    }
+  },
+  {
+    "id": "10",
+    "name": "Bright Green",
+    "material": "solid",
+    "rgb": "#4B9F4A",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "36",
+          "name": "Bright Green"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "37",
+          "name": "Bright Green"
+        }
+      ]
+    }
+  },
+  {
+    "id": "11",
+    "name": "Light Turquoise",
+    "material": "solid",
+    "rgb": "#55A5AF",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "40",
+          "name": "Light Turquoise"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "116",
+          "name": "Med. bluish green"
+        }
+      ]
+    }
+  },
+  {
+    "id": "12",
+    "name": "Salmon",
+    "material": "solid",
+    "rgb": "#F2705E",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "25",
+          "name": "Salmon"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "4",
+          "name": "Brick Red"
+        }
+      ]
+    }
+  },
+  {
+    "id": "13",
+    "name": "Pink",
+    "material": "solid",
+    "rgb": "#FC97AC",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "23",
+          "name": "Pink"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "1007",
+          "name": "L.REDVIOL"
+        }
+      ]
+    }
+  },
+  {
+    "id": "14",
+    "name": "Yellow",
+    "material": "solid",
+    "rgb": "#F2CD37",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "3",
+          "name": "Yellow"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "24",
+          "name": "Bright yellow"
+        }
+      ]
+    }
+  },
+  {
+    "id": "15",
+    "name": "White",
+    "material": "solid",
+    "rgb": "#FFFFFF",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "1",
+          "name": "White"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "1",
+          "name": "White"
+        }
+      ]
+    }
+  },
+  {
+    "id": "17",
+    "name": "Light Green",
+    "material": "solid",
+    "rgb": "#C2DAB8",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "38",
+          "name": "Light Green"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "6",
+          "name": "Light green"
+        }
+      ]
+    }
+  },
+  {
+    "id": "18",
+    "name": "Light Yellow",
+    "material": "solid",
+    "rgb": "#FBE696",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "33",
+          "name": "Light Yellow"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "3",
+          "name": "Light yellow"
+        }
+      ]
+    }
+  },
+  {
+    "id": "19",
+    "name": "Tan",
+    "material": "solid",
+    "rgb": "#E4CD9E",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "2",
+          "name": "Tan"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "5",
+          "name": "Brick yellow"
+        }
+      ]
+    }
+  },
+  {
+    "id": "20",
+    "name": "Light Violet",
+    "material": "solid",
+    "rgb": "#C9CAE2",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "44",
+          "name": "Light Violet"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "39",
+          "name": "Light bluish violet"
+        }
+      ]
+    }
+  },
+  {
+    "id": "21",
+    "name": "Glow In Dark Opaque",
+    "material": "solid",
+    "rgb": "#D4D5C9",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "46",
+          "name": "Glow In Dark Opaque"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "50",
+          "name": "Phosp. White"
+        }
+      ]
+    }
+  },
+  {
+    "id": "22",
+    "name": "Purple",
+    "material": "solid",
+    "rgb": "#81007B",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "24",
+          "name": "Purple"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "104",
+          "name": "Bright violet"
+        }
+      ]
+    }
+  },
+  {
+    "id": "23",
+    "name": "Dark Blue-Violet",
+    "material": "solid",
+    "rgb": "#2032B0",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "109",
+          "name": "Dark Blue-Violet"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "196",
+          "name": "Dark Royal blue"
+        }
+      ]
+    }
+  },
+  {
+    "id": "25",
+    "name": "Orange",
+    "material": "solid",
+    "rgb": "#FE8A18",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "4",
+          "name": "Orange"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "106",
+          "name": "Bright orange"
+        }
+      ]
+    }
+  },
+  {
+    "id": "26",
+    "name": "Magenta",
+    "material": "solid",
+    "rgb": "#923978",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "71",
+          "name": "Magenta"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "124",
+          "name": "Bright reddish violet"
+        }
+      ]
+    }
+  },
+  {
+    "id": "27",
+    "name": "Lime",
+    "material": "solid",
+    "rgb": "#BBE90B",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "34",
+          "name": "Lime"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "119",
+          "name": "Br. yellowish green"
+        }
+      ]
+    }
+  },
+  {
+    "id": "28",
+    "name": "Dark Tan",
+    "material": "solid",
+    "rgb": "#958A73",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "69",
+          "name": "Dark Tan"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "138",
+          "name": "Sand yellow"
+        }
+      ]
+    }
+  },
+  {
+    "id": "29",
+    "name": "Bright Pink",
+    "material": "solid",
+    "rgb": "#E4ADC8",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "104",
+          "name": "Bright Pink"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "222",
+          "name": "Light Purple"
+        }
+      ]
+    }
+  },
+  {
+    "id": "30",
+    "name": "Medium Lavender",
+    "material": "solid",
+    "rgb": "#AC78BA",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "157",
+          "name": "Medium Lavender"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "324",
+          "name": "Medium Lavender"
+        }
+      ]
+    }
+  },
+  {
+    "id": "31",
+    "name": "Lavender",
+    "material": "solid",
+    "rgb": "#E1D5ED",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "154",
+          "name": "Lavender"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "325",
+          "name": "Lavender"
+        }
+      ]
+    }
+  },
+  {
+    "id": "33",
+    "name": "Trans-Dark Blue",
+    "material": "transparent",
+    "rgb": "#0020A0",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "14",
+          "name": "Trans-Dark Blue"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "43",
+          "name": "Tr. Blue"
+        }
+      ]
+    }
+  },
+  {
+    "id": "34",
+    "name": "Trans-Green",
+    "material": "transparent",
+    "rgb": "#84B68D",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "20",
+          "name": "Trans-Green"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "48",
+          "name": "Tr. Green"
+        }
+      ]
+    }
+  },
+  {
+    "id": "35",
+    "name": "Trans-Bright Green",
+    "material": "transparent",
+    "rgb": "#D9E4A7",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "108",
+          "name": "Trans-Bright Green"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "311",
+          "name": "Transparent Bright Green"
+        }
+      ]
+    }
+  },
+  {
+    "id": "36",
+    "name": "Trans-Red",
+    "material": "transparent",
+    "rgb": "#C91A09",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "17",
+          "name": "Trans-Red"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "41",
+          "name": "Tr. Red"
+        }
+      ]
+    }
+  },
+  {
+    "id": "40",
+    "name": "Trans-Black",
+    "material": "transparent",
+    "rgb": "#635F52",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "13",
+          "name": "Trans-Black"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "111",
+          "name": "Tr. Brown"
+        }
+      ]
+    }
+  },
+  {
+    "id": "41",
+    "name": "Trans-Light Blue",
+    "material": "transparent",
+    "rgb": "#AEEFEC",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "15",
+          "name": "Trans-Light Blue"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "42",
+          "name": "Tr. Lg blue"
+        }
+      ]
+    }
+  },
+  {
+    "id": "42",
+    "name": "Trans-Neon Green",
+    "material": "transparent",
+    "rgb": "#F8F184",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "16",
+          "name": "Trans-Neon Green"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "49",
+          "name": "Tr. Flu. Green"
+        }
+      ]
+    }
+  },
+  {
+    "id": "43",
+    "name": "Trans-Aqua",
+    "material": "transparent",
+    "rgb": "#C1DFF0",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "113",
+          "name": "Trans-Aqua"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "229",
+          "name": "Transparent Light Bluish Green"
+        }
+      ]
+    }
+  },
+  {
+    "id": "45",
+    "name": "Trans-Dark Pink",
+    "material": "transparent",
+    "rgb": "#DF6695",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "50",
+          "name": "Trans-Dark Pink"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "113",
+          "name": "Tr. Medi. reddish violet"
+        }
+      ]
+    }
+  },
+  {
+    "id": "46",
+    "name": "Trans-Yellow",
+    "material": "transparent",
+    "rgb": "#F5CD2F",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "19",
+          "name": "Trans-Yellow"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "44",
+          "name": "Tr. Yellow"
+        }
+      ]
+    }
+  },
+  {
+    "id": "47",
+    "name": "Trans-Clear",
+    "material": "transparent",
+    "rgb": "#FCFCFC",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "12",
+          "name": "Trans-Clear"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "40",
+          "name": "Transparent"
+        }
+      ]
+    }
+  },
+  {
+    "id": "52",
+    "name": "Trans-Purple",
+    "material": "transparent",
+    "rgb": "#A5A5CB",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "51",
+          "name": "Trans-Purple"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "126",
+          "name": "Tr. Bright bluish violet"
+        },
+        {
+          "id": "236",
+          "name": "TR. BR. RED. LI"
+        }
+      ]
+    }
+  },
+  {
+    "id": "54",
+    "name": "Trans-Neon Yellow",
+    "material": "transparent",
+    "rgb": "#DAB000",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "121",
+          "name": "Trans-Neon Yellow"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "157",
+          "name": "Transparent Fluorescent Yellow"
+        }
+      ]
+    }
+  },
+  {
+    "id": "57",
+    "name": "Trans-Neon Orange",
+    "material": "transparent",
+    "rgb": "#FF800D",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "18",
+          "name": "Trans-Neon Orange"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "47",
+          "name": "Tr. Flu. Reddish orange"
+        }
+      ]
+    }
+  },
+  {
+    "id": "60",
+    "name": "Chrome Antique Brass",
+    "material": "solid",
+    "rgb": "#645A4C",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "57",
+          "name": "Chrome Antique Brass"
+        }
+      ]
+    }
+  },
+  {
+    "id": "61",
+    "name": "Chrome Blue",
+    "material": "solid",
+    "rgb": "#6C96BF",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "52",
+          "name": "Chrome Blue"
+        }
+      ]
+    }
+  },
+  {
+    "id": "62",
+    "name": "Chrome Green",
+    "material": "solid",
+    "rgb": "#3CB371",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "64",
+          "name": "Chrome Green"
+        }
+      ]
+    }
+  },
+  {
+    "id": "63",
+    "name": "Chrome Pink",
+    "material": "solid",
+    "rgb": "#AA4D8E",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "82",
+          "name": "Chrome Pink"
+        }
+      ]
+    }
+  },
+  {
+    "id": "64",
+    "name": "Chrome Black",
+    "material": "solid",
+    "rgb": "#1B2A34",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "122",
+          "name": "Chrome Black"
+        }
+      ]
+    }
+  },
+  {
+    "id": "68",
+    "name": "Very Light Orange",
+    "material": "solid",
+    "rgb": "#F3CF9B",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "96",
+          "name": "Very Light Orange"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "36",
+          "name": "Light Yellowish Orange"
+        }
+      ]
+    }
+  },
+  {
+    "id": "69",
+    "name": "Light Purple",
+    "material": "solid",
+    "rgb": "#CD6298",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "93",
+          "name": "Light Purple"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "198",
+          "name": "Bright Reddish Lilac"
+        }
+      ]
+    }
+  },
+  {
+    "id": "70",
+    "name": "Reddish Brown",
+    "material": "solid",
+    "rgb": "#582A12",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "88",
+          "name": "Reddish Brown"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "192",
+          "name": "Reddish Brown"
+        }
+      ]
+    }
+  },
+  {
+    "id": "71",
+    "name": "Light Bluish Gray",
+    "material": "solid",
+    "rgb": "#A0A5A9",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "86",
+          "name": "Light Bluish Gray"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "194",
+          "name": "Medium stone grey"
+        }
+      ]
+    }
+  },
+  {
+    "id": "72",
+    "name": "Dark Bluish Gray",
+    "material": "solid",
+    "rgb": "#6C6E68",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "85",
+          "name": "Dark Bluish Gray"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "199",
+          "name": "Dark stone grey"
+        }
+      ]
+    }
+  },
+  {
+    "id": "73",
+    "name": "Medium Blue",
+    "material": "solid",
+    "rgb": "#5A93DB",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "42",
+          "name": "Medium Blue"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "102",
+          "name": "Medium blue"
+        }
+      ]
+    }
+  },
+  {
+    "id": "74",
+    "name": "Medium Green",
+    "material": "solid",
+    "rgb": "#73DCA1",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "37",
+          "name": "Medium Green"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "29",
+          "name": "Medium green"
+        }
+      ]
+    }
+  },
+  {
+    "id": "75",
+    "name": "Speckle Black-Copper",
+    "material": "solid",
+    "rgb": "#05131D",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "116",
+          "name": "Speckle Black-Copper"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "75",
+          "name": "COP. DIF."
+        }
+      ]
+    }
+  },
+  {
+    "id": "76",
+    "name": "Speckle DBGray-Silver",
+    "material": "solid",
+    "rgb": "#6C6E68",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "117",
+          "name": "Speckle DBGray-Silver"
+        }
+      ]
+    }
+  },
+  {
+    "id": "77",
+    "name": "Light Pink",
+    "material": "solid",
+    "rgb": "#FECCCF",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "56",
+          "name": "Light Pink"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "223",
+          "name": "Light Pink"
+        }
+      ]
+    }
+  },
+  {
+    "id": "78",
+    "name": "Light Nougat",
+    "material": "solid",
+    "rgb": "#F6D7B3",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "90",
+          "name": "Light Nougat"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "283",
+          "name": "Light Nougat"
+        }
+      ]
+    }
+  },
+  {
+    "id": "79",
+    "name": "Milky White",
+    "material": "solid",
+    "rgb": "#FFFFFF",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "60",
+          "name": "Milky White"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "20",
+          "name": "Nature"
+        }
+      ]
+    }
+  },
+  {
+    "id": "80",
+    "name": "Metallic Silver",
+    "material": "solid",
+    "rgb": "#A5A9B4",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "67",
+          "name": "Metallic Silver"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "296",
+          "name": "Cool silver"
+        },
+        {
+          "id": "298",
+          "name": "Cool silver"
+        },
+        {
+          "id": "336",
+          "name": "SILVER INK"
+        },
+        {
+          "id": "1002",
+          "name": "C.SILVER, DR. L"
+        },
+        {
+          "id": "1015",
+          "name": "C.SILVER"
+        }
+      ]
+    }
+  },
+  {
+    "id": "81",
+    "name": "Metallic Green",
+    "material": "solid",
+    "rgb": "#899B5F",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "70",
+          "name": "Metallic Green"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "200",
+          "name": "Lemon Metallic"
+        }
+      ]
+    }
+  },
+  {
+    "id": "82",
+    "name": "Metallic Gold",
+    "material": "solid",
+    "rgb": "#DBAC34",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "65",
+          "name": "Metallic Gold"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "335",
+          "name": "GOLD INK"
+        },
+        {
+          "id": "1004",
+          "name": "W.GOLD, DR.LA."
+        }
+      ]
+    }
+  },
+  {
+    "id": "84",
+    "name": "Medium Nougat",
+    "material": "solid",
+    "rgb": "#CC702A",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "150",
+          "name": "Medium Nougat"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "312",
+          "name": "Medium Nougat"
+        }
+      ]
+    }
+  },
+  {
+    "id": "85",
+    "name": "Dark Purple",
+    "material": "solid",
+    "rgb": "#3F3691",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "89",
+          "name": "Dark Purple"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "268",
+          "name": "Medium Lilac"
+        }
+      ]
+    }
+  },
+  {
+    "id": "86",
+    "name": "Medium Brown",
+    "material": "solid",
+    "rgb": "#7C503A",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "91",
+          "name": "Medium Brown"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "86",
+          "name": "BROWN"
+        }
+      ]
+    }
+  },
+  {
+    "id": "89",
+    "name": "R. BLUE",
+    "material": "solid",
+    "rgb": "#4C61DB",
+    "identifiers": {
+      "LEGO": [
+        {
+          "id": "195",
+          "name": "R. BLUE"
+        }
+      ]
+    }
+  },
+  {
+    "id": "92",
+    "name": "Nougat",
+    "material": "solid",
+    "rgb": "#D09168",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "28",
+          "name": "Nougat"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "18",
+          "name": "Nougat"
+        }
+      ]
+    }
+  },
+  {
+    "id": "100",
+    "name": "Light Salmon",
+    "material": "solid",
+    "rgb": "#FEBABD",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "26",
+          "name": "Light Salmon"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "100",
+          "name": "Light red"
+        }
+      ]
+    }
+  },
+  {
+    "id": "110",
+    "name": "Violet",
+    "material": "solid",
+    "rgb": "#4354A3",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "43",
+          "name": "Violet"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "110",
+          "name": "Bright Bluish Violet"
+        },
+        {
+          "id": "1009",
+          "name": "LILAC"
+        }
+      ]
+    }
+  },
+  {
+    "id": "112",
+    "name": "Blue-Violet",
+    "material": "solid",
+    "rgb": "#6874CA",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "97",
+          "name": "Blue-Violet"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "112",
+          "name": "Medium Bluish Violet"
+        }
+      ]
+    }
+  },
+  {
+    "id": "114",
+    "name": "Glitter Trans-Dark Pink",
+    "material": "transparent",
+    "rgb": "#DF6695",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "100",
+          "name": "Glitter Trans-Dark Pink"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "114",
+          "name": "Tr. Medium Reddish-Violet w. Glitter 2%"
+        }
+      ]
+    }
+  },
+  {
+    "id": "115",
+    "name": "Medium Lime",
+    "material": "solid",
+    "rgb": "#C7D23C",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "76",
+          "name": "Medium Lime"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "115",
+          "name": "Med. yellowish green"
+        }
+      ]
+    }
+  },
+  {
+    "id": "117",
+    "name": "Glitter Trans-Clear",
+    "material": "transparent",
+    "rgb": "#FFFFFF",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "101",
+          "name": "Glitter Trans-Clear"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "117",
+          "name": "Transparent Glitter"
+        }
+      ]
+    }
+  },
+  {
+    "id": "118",
+    "name": "Aqua",
+    "material": "solid",
+    "rgb": "#B3D7D1",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "41",
+          "name": "Aqua"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "118",
+          "name": "Light bluish green"
+        }
+      ]
+    }
+  },
+  {
+    "id": "120",
+    "name": "Light Lime",
+    "material": "solid",
+    "rgb": "#D9E4A7",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "35",
+          "name": "Light Lime"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "120",
+          "name": "Lig. yellowish green"
+        }
+      ]
+    }
+  },
+  {
+    "id": "125",
+    "name": "Light Orange",
+    "material": "solid",
+    "rgb": "#F9BA61",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "32",
+          "name": "Light Orange"
+        }
+      ]
+    }
+  },
+  {
+    "id": "129",
+    "name": "Glitter Trans-Purple",
+    "material": "transparent",
+    "rgb": "#A5A5CB",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "102",
+          "name": "Glitter Trans-Purple"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "129",
+          "name": "Tr. Bright Bluish Violet w. Glitter 2%"
+        }
+      ]
+    }
+  },
+  {
+    "id": "132",
+    "name": "Speckle Black-Silver",
+    "material": "solid",
+    "rgb": "#05131D",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "111",
+          "name": "Speckle Black-Silver"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "132",
+          "name": "Black Glitter"
+        }
+      ]
+    }
+  },
+  {
+    "id": "133",
+    "name": "Speckle Black-Gold",
+    "material": "solid",
+    "rgb": "#05131D",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "151",
+          "name": "Speckle Black-Gold"
+        }
+      ]
+    }
+  },
+  {
+    "id": "134",
+    "name": "Copper",
+    "material": "solid",
+    "rgb": "#AE7A59",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "84",
+          "name": "Copper"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "134",
+          "name": "COPPER, DR.LA."
+        },
+        {
+          "id": "139",
+          "name": "Copper"
+        },
+        {
+          "id": "346",
+          "name": "Copper Metallic"
+        },
+        {
+          "id": "1016",
+          "name": "COPPER INK"
+        }
+      ]
+    }
+  },
+  {
+    "id": "135",
+    "name": "Pearl Light Gray",
+    "material": "solid",
+    "rgb": "#9CA3A8",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "66",
+          "name": "Pearl Light Gray"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "131",
+          "name": "Silver"
+        },
+        {
+          "id": "179",
+          "name": "Silver flip/flop"
+        }
+      ]
+    }
+  },
+  {
+    "id": "137",
+    "name": "Metal Blue",
+    "material": "solid",
+    "rgb": "#7988A1",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "78",
+          "name": "Metal Blue"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "137",
+          "name": "Metal Blue"
+        },
+        {
+          "id": "145",
+          "name": "Sand blue metallic"
+        }
+      ]
+    }
+  },
+  {
+    "id": "142",
+    "name": "Pearl Light Gold",
+    "material": "solid",
+    "rgb": "#DCBC81",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "61",
+          "name": "Pearl Light Gold"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "127",
+          "name": "Gold"
+        }
+      ]
+    }
+  },
+  {
+    "id": "143",
+    "name": "Trans-Medium Blue",
+    "material": "transparent",
+    "rgb": "#CFE2F7",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "74",
+          "name": "Trans-Medium Blue"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "143",
+          "name": "Tr. Flu. Blue"
+        }
+      ]
+    }
+  },
+  {
+    "id": "148",
+    "name": "Pearl Dark Gray",
+    "material": "solid",
+    "rgb": "#575857",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "77",
+          "name": "Pearl Dark Gray"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "148",
+          "name": "Mettalic Dark Grey"
+        },
+        {
+          "id": "316",
+          "name": "Titanium Metallic"
+        }
+      ]
+    }
+  },
+  {
+    "id": "150",
+    "name": "Pearl Very Light Gray",
+    "material": "solid",
+    "rgb": "#ABADAC",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "119",
+          "name": "Pearl Very Light Gray"
+        }
+      ]
+    }
+  },
+  {
+    "id": "151",
+    "name": "Very Light Bluish Gray",
+    "material": "solid",
+    "rgb": "#E6E3E0",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "99",
+          "name": "Very Light Bluish Gray"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "208",
+          "name": "Light stone grey"
+        }
+      ]
+    }
+  },
+  {
+    "id": "158",
+    "name": "Yellowish Green",
+    "material": "solid",
+    "rgb": "#DFEEA5",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "158",
+          "name": "Yellowish Green"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "326",
+          "name": "Spring Yellow Green"
+        }
+      ]
+    }
+  },
+  {
+    "id": "178",
+    "name": "Flat Dark Gold",
+    "material": "solid",
+    "rgb": "#B48455",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "81",
+          "name": "Flat Dark Gold"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "1001",
+          "name": "Gold Metallic"
+        }
+      ]
+    }
+  },
+  {
+    "id": "179",
+    "name": "Flat Silver",
+    "material": "solid",
+    "rgb": "#898788",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "95",
+          "name": "Flat Silver"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "315",
+          "name": "Silver Metallic"
+        }
+      ]
+    }
+  },
+  {
+    "id": "182",
+    "name": "Trans-Orange",
+    "material": "transparent",
+    "rgb": "#F08F1C",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "98",
+          "name": "Trans-Orange"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "182",
+          "name": "Tr. Bright Orange"
+        }
+      ]
+    }
+  },
+  {
+    "id": "183",
+    "name": "Pearl White",
+    "material": "solid",
+    "rgb": "#F2F3F2",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "83",
+          "name": "Pearl White"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "183",
+          "name": "Metallic White"
+        }
+      ]
+    }
+  },
+  {
+    "id": "191",
+    "name": "Bright Light Orange",
+    "material": "solid",
+    "rgb": "#F8BB3D",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "110",
+          "name": "Bright Light Orange"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "191",
+          "name": "Flame yellowish orange"
+        }
+      ]
+    }
+  },
+  {
+    "id": "212",
+    "name": "Bright Light Blue",
+    "material": "solid",
+    "rgb": "#9FC3E9",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "105",
+          "name": "Bright Light Blue"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "212",
+          "name": "Light Royal blue"
+        }
+      ]
+    }
+  },
+  {
+    "id": "216",
+    "name": "Rust",
+    "material": "solid",
+    "rgb": "#B31004",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "27",
+          "name": "Rust"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "216",
+          "name": "Rust"
+        }
+      ]
+    }
+  },
+  {
+    "id": "226",
+    "name": "Bright Light Yellow",
+    "material": "solid",
+    "rgb": "#FFF03A",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "103",
+          "name": "Bright Light Yellow"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "226",
+          "name": "Cool Yellow"
+        }
+      ]
+    }
+  },
+  {
+    "id": "230",
+    "name": "Trans-Pink",
+    "material": "transparent",
+    "rgb": "#E4ADC8",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "107",
+          "name": "Trans-Pink"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "230",
+          "name": "TR. BR. PURPLE"
+        }
+      ]
+    }
+  },
+  {
+    "id": "232",
+    "name": "Sky Blue",
+    "material": "solid",
+    "rgb": "#7DBFDD",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "87",
+          "name": "Sky Blue"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "232",
+          "name": "Dove blue"
+        }
+      ]
+    }
+  },
+  {
+    "id": "236",
+    "name": "Trans-Light Purple",
+    "material": "transparent",
+    "rgb": "#96709F",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "114",
+          "name": "Trans-Light Purple"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "284",
+          "name": "TR. RED-LILAC"
+        }
+      ]
+    }
+  },
+  {
+    "id": "272",
+    "name": "Dark Blue",
+    "material": "solid",
+    "rgb": "#0A3463",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "63",
+          "name": "Dark Blue"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "140",
+          "name": "Earth blue"
+        }
+      ]
+    }
+  },
+  {
+    "id": "288",
+    "name": "Dark Green",
+    "material": "solid",
+    "rgb": "#184632",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "80",
+          "name": "Dark Green"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "141",
+          "name": "Earth Green"
+        }
+      ]
+    }
+  },
+  {
+    "id": "294",
+    "name": "Glow In Dark Trans",
+    "material": "transparent",
+    "rgb": "#BDC6AD",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "118",
+          "name": "Glow In Dark Trans"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "294",
+          "name": "Phosphorescent Green"
+        }
+      ]
+    }
+  },
+  {
+    "id": "297",
+    "name": "Pearl Gold",
+    "material": "solid",
+    "rgb": "#AA7F2E",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "115",
+          "name": "Pearl Gold"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "297",
+          "name": "Warm Gold"
+        }
+      ]
+    }
+  },
+  {
+    "id": "308",
+    "name": "Dark Brown",
+    "material": "solid",
+    "rgb": "#352100",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "120",
+          "name": "Dark Brown"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "308",
+          "name": "Dark Brown"
+        }
+      ]
+    }
+  },
+  {
+    "id": "313",
+    "name": "Maersk Blue",
+    "material": "solid",
+    "rgb": "#3592C3",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "72",
+          "name": "Maersk Blue"
+        }
+      ]
+    }
+  },
+  {
+    "id": "320",
+    "name": "Dark Red",
+    "material": "solid",
+    "rgb": "#720E0F",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "59",
+          "name": "Dark Red"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "154",
+          "name": "Dark red"
+        }
+      ]
+    }
+  },
+  {
+    "id": "321",
+    "name": "Dark Azure",
+    "material": "solid",
+    "rgb": "#078BC9",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "153",
+          "name": "Dark Azure"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "321",
+          "name": "Dark Azur"
+        }
+      ]
+    }
+  },
+  {
+    "id": "322",
+    "name": "Medium Azure",
+    "material": "solid",
+    "rgb": "#36AEBF",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "156",
+          "name": "Medium Azure"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "322",
+          "name": "Medium Azure"
+        }
+      ]
+    }
+  },
+  {
+    "id": "323",
+    "name": "Light Aqua",
+    "material": "solid",
+    "rgb": "#ADC3C0",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "152",
+          "name": "Light Aqua"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "323",
+          "name": "Aqua"
+        }
+      ]
+    }
+  },
+  {
+    "id": "326",
+    "name": "Olive Green",
+    "material": "solid",
+    "rgb": "#9B9A5A",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "155",
+          "name": "Olive Green"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "330",
+          "name": "Olive Green"
+        }
+      ]
+    }
+  },
+  {
+    "id": "334",
+    "name": "Chrome Gold",
+    "material": "solid",
+    "rgb": "#BBA53D",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "21",
+          "name": "Chrome Gold"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "310",
+          "name": "Metalized Gold"
+        }
+      ]
+    }
+  },
+  {
+    "id": "335",
+    "name": "Sand Red",
+    "material": "solid",
+    "rgb": "#D67572",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "58",
+          "name": "Sand Red"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "153",
+          "name": "Sand red"
+        }
+      ]
+    }
+  },
+  {
+    "id": "351",
+    "name": "Medium Dark Pink",
+    "material": "solid",
+    "rgb": "#F785B1",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "94",
+          "name": "Medium Dark Pink"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "22",
+          "name": "Medium Reddish Violet"
+        }
+      ]
+    }
+  },
+  {
+    "id": "366",
+    "name": "Earth Orange",
+    "material": "solid",
+    "rgb": "#FA9C1C",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "29",
+          "name": "Earth Orange"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "128",
+          "name": "Dark Nougat"
+        },
+        {
+          "id": "1008",
+          "name": "L.ORABROWN"
+        }
+      ]
+    }
+  },
+  {
+    "id": "373",
+    "name": "Sand Purple",
+    "material": "solid",
+    "rgb": "#845E84",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "54",
+          "name": "Sand Purple"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "136",
+          "name": "Sand violet"
+        }
+      ]
+    }
+  },
+  {
+    "id": "378",
+    "name": "Sand Green",
+    "material": "solid",
+    "rgb": "#A0BCAC",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "48",
+          "name": "Sand Green"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "151",
+          "name": "Sand green"
+        }
+      ]
+    }
+  },
+  {
+    "id": "379",
+    "name": "Sand Blue",
+    "material": "solid",
+    "rgb": "#6074A1",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "55",
+          "name": "Sand Blue"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "135",
+          "name": "Sand blue"
+        }
+      ]
+    }
+  },
+  {
+    "id": "383",
+    "name": "Chrome Silver",
+    "material": "solid",
+    "rgb": "#E0E0E0",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "22",
+          "name": "Chrome Silver"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "309",
+          "name": "Metalized Silver"
+        }
+      ]
+    }
+  },
+  {
+    "id": "450",
+    "name": "Fabuland Brown",
+    "material": "solid",
+    "rgb": "#B67B50",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "106",
+          "name": "Fabuland Brown"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "12",
+          "name": "Light Orange Brown"
+        }
+      ]
+    }
+  },
+  {
+    "id": "462",
+    "name": "Medium Orange",
+    "material": "solid",
+    "rgb": "#FFA70B",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "31",
+          "name": "Medium Orange"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "105",
+          "name": "Br. yellowish orange"
+        }
+      ]
+    }
+  },
+  {
+    "id": "484",
+    "name": "Dark Orange",
+    "material": "solid",
+    "rgb": "#A95500",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "68",
+          "name": "Dark Orange"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "38",
+          "name": "Dark Orange"
+        }
+      ]
+    }
+  },
+  {
+    "id": "503",
+    "name": "Very Light Gray",
+    "material": "solid",
+    "rgb": "#E6E3DA",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "49",
+          "name": "Very Light Gray"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "103",
+          "name": "Light grey"
+        }
+      ]
+    }
+  },
+  {
+    "id": "1000",
+    "name": "Glow in Dark White",
+    "material": "solid",
+    "rgb": "#D9D9D9",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "159",
+          "name": "Glow in Dark White"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "329",
+          "name": "WHITE GLOW"
+        }
+      ]
+    }
+  },
+  {
+    "id": "1001",
+    "name": "Medium Violet",
+    "material": "solid",
+    "rgb": "#9391E4",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "73",
+          "name": "Medium Violet"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "112",
+          "name": "Medium Bluish Violet"
+        },
+        {
+          "id": "219",
+          "name": "Lilac"
+        }
+      ]
+    }
+  },
+  {
+    "id": "1002",
+    "name": "Glitter Trans-Neon Green",
+    "material": "transparent",
+    "rgb": "#C0F500",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "163",
+          "name": "Glitter Trans-Neon Green"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "339",
+          "name": "TR.FL.GRE W/GLI"
+        }
+      ]
+    }
+  },
+  {
+    "id": "1003",
+    "name": "Glitter Trans-Light Blue",
+    "material": "transparent",
+    "rgb": "#68BCC5",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "162",
+          "name": "Glitter Trans-Light Blue"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "302",
+          "name": "PCTR LI.BLUE W/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "1004",
+    "name": "Trans Light Orange",
+    "material": "transparent",
+    "rgb": "#FCB76D",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "164",
+          "name": "Trans Light Orange"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "231",
+          "name": "TR. FL. YEL ORA"
+        }
+      ]
+    }
+  },
+  {
+    "id": "1005",
+    "name": "TR. FIRE YELL",
+    "material": "transparent",
+    "rgb": "#FBE890",
+    "identifiers": {
+      "LEGO": [
+        {
+          "id": "234",
+          "name": "TR. FIRE YELL"
+        }
+      ]
+    }
+  },
+  {
+    "id": "1006",
+    "name": "TR. L.ROYAL BLUE",
+    "material": "transparent",
+    "rgb": "#B4D4F7",
+    "identifiers": {
+      "LEGO": [
+        {
+          "id": "293",
+          "name": "TR. L.ROYAL BLUE"
+        }
+      ]
+    }
+  },
+  {
+    "id": "1007",
+    "name": "Clikits Lavender",
+    "material": "solid",
+    "rgb": "#8E5597",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "227",
+          "name": "Clikits Lavender"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "218",
+          "name": "RED. LILAC"
+        }
+      ]
+    }
+  },
+  {
+    "id": "1012",
+    "name": "Fabuland Orange",
+    "material": "solid",
+    "rgb": "#EF9121",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "160",
+          "name": "Fabuland Orange"
+        }
+      ]
+    }
+  },
+  {
+    "id": "1013",
+    "name": "Mx White",
+    "material": "solid",
+    "rgb": "#F4F4F4",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "123",
+          "name": "Mx White"
+        }
+      ]
+    }
+  },
+  {
+    "id": "1014",
+    "name": "Mx Light Bluish Gray",
+    "material": "solid",
+    "rgb": "#AfB5C7",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "124",
+          "name": "Mx Light Bluish Gray"
+        }
+      ]
+    }
+  },
+  {
+    "id": "1015",
+    "name": "Mx Light Gray",
+    "material": "solid",
+    "rgb": "#9C9C9C",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "125",
+          "name": "Mx Light Gray"
+        }
+      ]
+    }
+  },
+  {
+    "id": "1016",
+    "name": "Mx Charcoal Gray",
+    "material": "solid",
+    "rgb": "#595D60",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "126",
+          "name": "Mx Charcoal Gray"
+        }
+      ]
+    }
+  },
+  {
+    "id": "1017",
+    "name": "Mx Tile Gray",
+    "material": "solid",
+    "rgb": "#6B5A5A",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "127",
+          "name": "Mx Tile Gray"
+        }
+      ]
+    }
+  },
+  {
+    "id": "1018",
+    "name": "Mx Black",
+    "material": "solid",
+    "rgb": "#4D4C52",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "128",
+          "name": "Mx Black"
+        }
+      ]
+    }
+  },
+  {
+    "id": "1019",
+    "name": "Mx Tile Brown",
+    "material": "solid",
+    "rgb": "#330000",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "131",
+          "name": "Mx Tile Brown"
+        }
+      ]
+    }
+  },
+  {
+    "id": "1020",
+    "name": "Mx Terracotta",
+    "material": "solid",
+    "rgb": "#5C5030",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "134",
+          "name": "Mx Terracotta"
+        }
+      ]
+    }
+  },
+  {
+    "id": "1021",
+    "name": "Mx Brown",
+    "material": "solid",
+    "rgb": "#907450",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "132",
+          "name": "Mx Brown"
+        }
+      ]
+    }
+  },
+  {
+    "id": "1022",
+    "name": "Mx Buff",
+    "material": "solid",
+    "rgb": "#DEC69C",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "133",
+          "name": "Mx Buff"
+        }
+      ]
+    }
+  },
+  {
+    "id": "1023",
+    "name": "Mx Red",
+    "material": "solid",
+    "rgb": "#B52C20",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "129",
+          "name": "Mx Red"
+        }
+      ]
+    }
+  },
+  {
+    "id": "1024",
+    "name": "Mx Pink Red",
+    "material": "solid",
+    "rgb": "#F45C40",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "130",
+          "name": "Mx Pink Red"
+        }
+      ]
+    }
+  },
+  {
+    "id": "1025",
+    "name": "Mx Orange",
+    "material": "solid",
+    "rgb": "#F47B30",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "135",
+          "name": "Mx Orange"
+        }
+      ]
+    }
+  },
+  {
+    "id": "1026",
+    "name": "Mx Light Orange",
+    "material": "solid",
+    "rgb": "#F7AD63",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "136",
+          "name": "Mx Light Orange"
+        }
+      ]
+    }
+  },
+  {
+    "id": "1027",
+    "name": "Mx Light Yellow",
+    "material": "solid",
+    "rgb": "#FFE371",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "137",
+          "name": "Mx Light Yellow"
+        }
+      ]
+    }
+  },
+  {
+    "id": "1028",
+    "name": "Mx Ochre Yellow",
+    "material": "solid",
+    "rgb": "#FED557",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "138",
+          "name": "Mx Ochre Yellow"
+        }
+      ]
+    }
+  },
+  {
+    "id": "1029",
+    "name": "Mx Lemon",
+    "material": "solid",
+    "rgb": "#BDC618",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "139",
+          "name": "Mx Lemon"
+        }
+      ]
+    }
+  },
+  {
+    "id": "1030",
+    "name": "Mx Pastel Green",
+    "material": "solid",
+    "rgb": "#7DB538",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "141",
+          "name": "Mx Pastel Green"
+        }
+      ]
+    }
+  },
+  {
+    "id": "1031",
+    "name": "Mx Olive Green",
+    "material": "solid",
+    "rgb": "#7C9051",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "140",
+          "name": "Mx Olive Green"
+        }
+      ]
+    }
+  },
+  {
+    "id": "1032",
+    "name": "Mx Aqua Green",
+    "material": "solid",
+    "rgb": "#27867E",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "142",
+          "name": "Mx Aqua Green"
+        }
+      ]
+    }
+  },
+  {
+    "id": "1033",
+    "name": "Mx Teal Blue",
+    "material": "solid",
+    "rgb": "#467083",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "146",
+          "name": "Mx Teal Blue"
+        }
+      ]
+    }
+  },
+  {
+    "id": "1034",
+    "name": "Mx Tile Blue",
+    "material": "solid",
+    "rgb": "#0057A6",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "143",
+          "name": "Mx Tile Blue"
+        }
+      ]
+    }
+  },
+  {
+    "id": "1035",
+    "name": "Mx Medium Blue",
+    "material": "solid",
+    "rgb": "#61AFFF",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "144",
+          "name": "Mx Medium Blue"
+        }
+      ]
+    }
+  },
+  {
+    "id": "1036",
+    "name": "Mx Pastel Blue",
+    "material": "solid",
+    "rgb": "#68AECE",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "145",
+          "name": "Mx Pastel Blue"
+        }
+      ]
+    }
+  },
+  {
+    "id": "1037",
+    "name": "Mx Violet",
+    "material": "solid",
+    "rgb": "#BD7D85",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "147",
+          "name": "Mx Violet"
+        }
+      ]
+    }
+  },
+  {
+    "id": "1038",
+    "name": "Mx Pink",
+    "material": "solid",
+    "rgb": "#F785B1",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "148",
+          "name": "Mx Pink"
+        }
+      ]
+    }
+  },
+  {
+    "id": "1039",
+    "name": "Mx Clear",
+    "material": "solid",
+    "rgb": "#FFFFFF",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "149",
+          "name": "Mx Clear"
+        }
+      ]
+    }
+  },
+  {
+    "id": "1040",
+    "name": "Mx Foil Dark Gray",
+    "material": "solid",
+    "rgb": "#595D60",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "210",
+          "name": "Mx Foil Dark Gray"
+        }
+      ]
+    }
+  },
+  {
+    "id": "1041",
+    "name": "Mx Foil Light Gray",
+    "material": "solid",
+    "rgb": "#9C9C9C",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "211",
+          "name": "Mx Foil Light Gray"
+        }
+      ]
+    }
+  },
+  {
+    "id": "1042",
+    "name": "Mx Foil Dark Green",
+    "material": "solid",
+    "rgb": "#006400",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "212",
+          "name": "Mx Foil Dark Green"
+        }
+      ]
+    }
+  },
+  {
+    "id": "1043",
+    "name": "Mx Foil Light Green",
+    "material": "solid",
+    "rgb": "#7DB538",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "213",
+          "name": "Mx Foil Light Green"
+        }
+      ]
+    }
+  },
+  {
+    "id": "1044",
+    "name": "Mx Foil Dark Blue",
+    "material": "solid",
+    "rgb": "#0057A6",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "214",
+          "name": "Mx Foil Dark Blue"
+        }
+      ]
+    }
+  },
+  {
+    "id": "1045",
+    "name": "Mx Foil Light Blue",
+    "material": "solid",
+    "rgb": "#68AECE",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "215",
+          "name": "Mx Foil Light Blue"
+        }
+      ]
+    }
+  },
+  {
+    "id": "1046",
+    "name": "Mx Foil Violet",
+    "material": "solid",
+    "rgb": "#4B0082",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "216",
+          "name": "Mx Foil Violet"
+        }
+      ]
+    }
+  },
+  {
+    "id": "1047",
+    "name": "Mx Foil Red",
+    "material": "solid",
+    "rgb": "#8B0000",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "217",
+          "name": "Mx Foil Red"
+        }
+      ]
+    }
+  },
+  {
+    "id": "1048",
+    "name": "Mx Foil Yellow",
+    "material": "solid",
+    "rgb": "#FED557",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "218",
+          "name": "Mx Foil Yellow"
+        }
+      ]
+    }
+  },
+  {
+    "id": "1049",
+    "name": "Mx Foil Orange",
+    "material": "solid",
+    "rgb": "#F7AD63",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "219",
+          "name": "Mx Foil Orange"
+        }
+      ]
+    }
+  },
+  {
+    "id": "1050",
+    "name": "Coral",
+    "material": "solid",
+    "rgb": "#FF698F",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "220",
+          "name": "Coral"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "1017",
+          "name": "CORAL"
+        }
+      ]
+    }
+  },
+  {
+    "id": "1051",
+    "name": "Maersk Blue",
+    "material": "solid",
+    "rgb": "#5AC4DA",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "72",
+          "name": "Maersk Blue"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "11",
+          "name": "Pastel Blue"
+        }
+      ]
+    }
+  },
+  {
+    "id": "1052",
+    "name": "TR.BR:ORA W/GLI",
+    "material": "transparent",
+    "rgb": "#F08F1C",
+    "identifiers": {
+      "LEGO": [
+        {
+          "id": "1018",
+          "name": "TR.BR:ORA W/GLI"
+        }
+      ]
+    }
+  },
+  {
+    "id": "1053",
+    "name": "Satin Trans-Light Blue",
+    "material": "transparent",
+    "rgb": "#68BCC5",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "223",
+          "name": "Satin Trans-Light Blue"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "362",
+          "name": "Transparent Blue Opal"
+        }
+      ]
+    }
+  },
+  {
+    "id": "1054",
+    "name": "Satin Trans-Dark Pink",
+    "material": "transparent",
+    "rgb": "#CE1D9B",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "224",
+          "name": "Satin Trans-Dark Pink"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "362",
+          "name": "Transparent Medium Reddish Violet with Opalescence"
+        }
+      ]
+    }
+  },
+  {
+    "id": "1055",
+    "name": "Satin White",
+    "material": "transparent",
+    "rgb": "#FCFCFC",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "228",
+          "name": "Satin White"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "360",
+          "name": "Transparent with Opalescence"
+        }
+      ]
+    }
+  },
+  {
+    "id": "1056",
+    "name": "Satin Trans-Black",
+    "material": "transparent",
+    "rgb": "#583927",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "229",
+          "name": "Satin Trans-Black"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "360",
+          "name": "Transparent Brown with Opalescence"
+        }
+      ]
+    }
+  },
+  {
+    "id": "1057",
+    "name": "Trans-Light Bright Green",
+    "material": "transparent",
+    "rgb": "#C9E788",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "226",
+          "name": "Trans-Light Bright Green"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "227",
+          "name": "Transparent Bright Yellowish Green"
+        }
+      ]
+    }
+  },
+  {
+    "id": "1058",
+    "name": "Trans-Light Green",
+    "material": "transparent",
+    "rgb": "#94E5AB",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "221",
+          "name": "Trans-Light Green"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "285",
+          "name": "Transparent Light Green"
+        }
+      ]
+    }
+  },
+  {
+    "id": "1059",
+    "name": "Satin Trans-Purple",
+    "material": "transparent",
+    "rgb": "#8320B7",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "230",
+          "name": "Satin Trans-Purple"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "1020",
+          "name": "Tr.Violet Opal"
+        }
+      ]
+    }
+  },
+  {
+    "id": "1060",
+    "name": "Satin Trans-Bright Green",
+    "material": "transparent",
+    "rgb": "#84B68D",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "233",
+          "name": "Satin Trans-Bright Green"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "1021",
+          "name": "Tr.Green Opal"
+        }
+      ]
+    }
+  },
+  {
+    "id": "1061",
+    "name": "Satin Trans-Dark Blue",
+    "material": "transparent",
+    "rgb": "#0020A0",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "232",
+          "name": "Satin Trans-Dark Blue"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "1019",
+          "name": "Tr.Blue Opal"
+        }
+      ]
+    }
+  },
+  {
+    "id": "1062",
+    "name": "Neon Yellow",
+    "material": "solid",
+    "rgb": "#EBD800",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "236",
+          "name": "Neon Yellow"
+        }
+      ],
+      "LEGO": [
+        {
+          "id": "368",
+          "name": "Vibrant Yellow"
+        }
+      ]
+    }
+  },
+  {
+    "id": "9999",
+    "name": "(Not Applicable)",
+    "material": "solid",
+    "rgb": "#05131D",
+    "identifiers": {
+      "BrickLink": [
+        {
+          "id": "0",
+          "name": "(Not Applicable)"
+        }
+      ]
+    }
+  }
+]

@@ -3,9 +3,11 @@ import clsx from "clsx";
 
 import { IPart, IPartColors } from "~/models";
 import { useCategoryById } from "~/hooks/data";
+import { brickLinkScraper } from "~/utils/bricklink";
 
 import { CubeIcon } from "~/components/icons/CubeIcon";
 import PanelCloseButton from "~/components/core/PanelCloseButton";
+import Tooltip from "~/components/elements/Tooltip";
 
 import { PartPanelColors } from "./PartPanelColors";
 
@@ -18,19 +20,32 @@ export interface PartPanelProps {
 
 export function PartPanel(props: PartPanelProps) {
   const { className, part, colors, onClose } = props;
-  const { id, name, image, externalIds, categoryId = "" } = part ?? {};
-  const { BrickLink, LEGO } = externalIds ?? {};
+  const { id, name, image, identifiers, categoryId = "" } = part ?? {};
+  const { BrickLink, LEGO } = identifiers ?? {};
 
   const category = useCategoryById(categoryId);
   const colorList = Object.keys(colors ?? {});
 
   const ref = useRef<HTMLImageElement>(null);
-  const [selectedColorImage, setSelectedColorImage] = useState("");
+  const [selectedImage, setSelectedImage] = useState("");
 
-  // Reset color when selected part changes
+  // Try to fetch image from BrickLink if one is not available
   useEffect(() => {
-    setSelectedColorImage(image ?? "");
-  }, [id, image]);
+    if (ref.current) ref.current.style.opacity = "0";
+    if (image) return setSelectedImage(image);
+
+    setSelectedImage("");
+
+    const brickLinkId = BrickLink?.[0];
+    if (!brickLinkId) return;
+
+    const { controller, promise } = brickLinkScraper.getPartImages(brickLinkId);
+    promise.then((images) => {
+      if (images[0]) setSelectedImage(images[0]);
+    });
+
+    return () => controller.abort();
+  }, [id, image, BrickLink]);
 
   return (
     <div
@@ -42,13 +57,13 @@ export function PartPanel(props: PartPanelProps) {
     >
       <div>
         <div className="flex flex-wrap gap-8 mb-4">
-          <div className="w-52 h-52 flex-shrink-0">
-            {image || selectedColorImage ? (
+          <div className="w-52 h-52 flex-shrink-0 flex items-center justify-center">
+            {selectedImage || image ? (
               <img
                 ref={ref}
-                className="opacity-0 transition-opacity w-full"
+                className="opacity-0 transition-opacity object-contain rounded-md max-w-full max-h-full"
                 onLoad={(e) => (e.currentTarget.style.opacity = "1")}
-                src={selectedColorImage || image}
+                src={selectedImage || image}
                 alt={name}
               />
             ) : (
@@ -57,14 +72,16 @@ export function PartPanel(props: PartPanelProps) {
           </div>
           <div className="flex flex-col gap-3">
             {BrickLink && BrickLink.length > 0 && (
-              <VendorIDDisplay ids={BrickLink} />
+              <VendorIDs name="BrickLink" ids={BrickLink} />
             )}
-            {LEGO && LEGO.length > 0 && <VendorIDDisplay ids={LEGO} />}
+            {LEGO && LEGO.length > 0 && <VendorIDs name="LEGO" ids={LEGO} />}
           </div>
         </div>
-        <p className="font-medium text-lego-navy text-opacity-80">
-          {category ? category.name : <>Category {categoryId}</>}
-        </p>
+        <Tooltip title={categoryId ? `Category ${categoryId}` : ""} position="left">
+          <p className="font-medium text-lego-navy text-opacity-80">
+            {category ? category.name : <>Category {categoryId}</>}
+          </p>
+        </Tooltip>
         <h2 className="text-lego-navy text-2xl lg:text-3xl font-bold">{name}</h2>
         {colorList.length > 1 && (
           <div className="mt-3">
@@ -73,11 +90,11 @@ export function PartPanel(props: PartPanelProps) {
             </h3>
             <PartPanelColors
               partColors={colors}
-              currentImage={selectedColorImage || image}
+              currentImage={selectedImage || image}
               onClick={(image) => {
-                if (image === selectedColorImage) return;
+                if (image === selectedImage) return;
                 if (ref.current) ref.current.style.opacity = "0";
-                setSelectedColorImage(image);
+                setSelectedImage(image);
               }}
             />
           </div>
@@ -88,11 +105,11 @@ export function PartPanel(props: PartPanelProps) {
   );
 }
 
-export function VendorIDDisplay(props: { ids: string[] }) {
-  const { ids } = props;
+export function VendorIDs(props: { name: string; ids: string[] }) {
+  const { name, ids } = props;
   return (
     <div>
-      <p className="text-sm font-medium text-lego-navy text-opacity-80">LEGO ID</p>
+      <p className="text-sm font-medium text-lego-navy text-opacity-80">{name} ID</p>
       <ul>
         {ids.map((id) => (
           <li key={id} className="text-xl lg:text-2xl text-lego-navy font-bold">

@@ -6,6 +6,10 @@
   @import url("https://rsms.me/inter/inter.css");
 
   body {
+    @apply bg-lego-yellow;
+  }
+
+  body.ready {
     @apply bg-slate-50;
   }
 

@@ -9,6 +9,5 @@ export interface IColor {
   name: string;
   material: "solid" | "transparent";
   rgb: string;
-  externalNames: VendorMap<string[]>;
-  externalIds: VendorMap<string[]>;
+  identifiers?: VendorMap<{ id: string; name: string }[]>;
 }
