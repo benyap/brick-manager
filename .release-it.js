@@ -12,6 +12,10 @@ module.exports = {
     commit: true,
     commitMessage: "chore(release): release ${version}",
   },
+  hooks: {
+    "before:init": ["yarn lint"],
+    "after:bump": ["yarn build", "yarn make"],
+  },
   plugins: {
     "@release-it/bumper": {
       in: "package.json",

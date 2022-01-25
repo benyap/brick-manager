@@ -25,7 +25,7 @@
     "make": "rimraf dist/* && yarn make:mac && yarn make:win",
     "make:mac": "electron-builder build --mac --x64",
     "make:win": "electron-builder build --win --x64",
-    "release": "yarn format && yarn lint && yarn build && yarn make && env-cmd release-it"
+    "release": "env-cmd release-it"
   },
   "dependencies": {
     "@headlessui/react": "1.4.3",
