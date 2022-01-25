@@ -4,7 +4,7 @@
   "description": "Manage your LEGO inventory",
   "main": "./build/main.bundle.js",
   "author": "Ben Yap <contact@benyap.com>",
-  "license": "MIT",
+  "license": "GPL-3.0",
   "homepage": "https://github.com/benyap/brick-manager#README.md",
   "repository": "https://github.com/benyap/brick-manager",
   "bugs": "https://github.com/benyap/brick-manager/issues",
