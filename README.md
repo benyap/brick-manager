@@ -2,7 +2,7 @@
 
 # Brick Manager
 
-![license](https://img.shields.io/github/license/benyap/brick-manager?style=flat-square)
+![license](https://img.shields.io/github/license/benyap/brick-manager?style=flat-square&)
 ![release](https://img.shields.io/github/v/release/benyap/brick-manager?display_name=tag&style=flat-square)
 
 **Brick Manager** is a desktop application for keep track of your LEGO bricks. The
@@ -19,7 +19,7 @@ application is free to use and saves your data locally.
 ## Download and install
 
 Head over to the [Releases](https://github.com/benyap/brick-manager/releases) page to
-download the the application. Currently supported on Windows and macOS.
+download the application. Currently supported on Windows and macOS.
 
 ## Development
 
