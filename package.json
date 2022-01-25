@@ -1,6 +1,6 @@
 {
   "name": "brick-manager",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Manage your LEGO inventory",
   "main": "./build/main.bundle.js",
   "author": "Ben Yap <contact@benyap.com>",

@@ -1,3 +1,15 @@
+### [0.1.1](https://github.com/benyap/brick-manager/compare/0.1.0...0.1.1) (2022-01-25)
+
+
+### Internal
+
+* add FUNDING.yml ([6ee6ee3](https://github.com/benyap/brick-manager/commit/6ee6ee35242938de9f05b8f676542e36776e75e2))
+
+
+### Tooling
+
+* release with correct version ([7041503](https://github.com/benyap/brick-manager/commit/7041503fbe0a7edc7dee936b491af2aa343d7f2d))
+
 ## 0.1.0 (2022-01-25)
 
 
