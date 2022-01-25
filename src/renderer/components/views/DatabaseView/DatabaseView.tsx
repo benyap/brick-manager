@@ -12,7 +12,7 @@ export function DatabaseView() {
         <p className="text-lego-navy text-lg">
           Search the database for information about your LEGO pieces.
         </p>
-        <p className="text-lego-navy text-opacity-80">
+        <p className="text-lego-navy-300">
           Data sourced from LEGO, BrickLink and Rebrickable.
         </p>
         <IconTileGrid className="mt-6" tiles={databaseTiles} />

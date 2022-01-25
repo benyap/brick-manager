@@ -439,8 +439,8 @@
     "name": "Duplo, Aircraft",
     "count": 101,
     "sources": {
-      "Rebrickable": 72,
-      "BrickLink": 29
+      "Rebrickable": 77,
+      "BrickLink": 24
     }
   },
   {
@@ -565,8 +565,8 @@
     "name": "Duplo, Tile, Decorated",
     "count": 632,
     "sources": {
-      "Rebrickable": 484,
-      "BrickLink": 148
+      "Rebrickable": 628,
+      "BrickLink": 4
     }
   },
   {
@@ -592,8 +592,8 @@
     "name": "Duplo, Vehicle",
     "count": 527,
     "sources": {
-      "Rebrickable": 405,
-      "BrickLink": 122
+      "Rebrickable": 402,
+      "BrickLink": 125
     }
   },
   {
@@ -989,8 +989,8 @@
     "name": "Minifigure, Head",
     "count": 3322,
     "sources": {
-      "Rebrickable": 3235,
-      "BrickLink": 87
+      "Rebrickable": 3236,
+      "BrickLink": 86
     }
   },
   {
@@ -1007,16 +1007,16 @@
     "name": "Minifigure, Headgear",
     "count": 1098,
     "sources": {
-      "Rebrickable": 1051,
-      "BrickLink": 47
+      "Rebrickable": 1052,
+      "BrickLink": 46
     }
   },
   {
     "id": "636",
     "name": "Minifigure, Headgear Accessory",
-    "count": 116,
+    "count": 117,
     "sources": {
-      "Rebrickable": 108,
+      "Rebrickable": 109,
       "BrickLink": 8
     }
   },
@@ -1034,8 +1034,8 @@
     "name": "Minifigure, Legs, Decorated",
     "count": 1850,
     "sources": {
-      "Rebrickable": 1842,
-      "BrickLink": 8
+      "Rebrickable": 1843,
+      "BrickLink": 7
     }
   },
   {
@@ -1076,10 +1076,9 @@
   {
     "id": "485",
     "name": "Minifigure, Torso Assembly",
-    "count": 87,
+    "count": 86,
     "sources": {
-      "Rebrickable": 86,
-      "BrickLink": 1
+      "Rebrickable": 86
     }
   },
   {
@@ -1087,8 +1086,8 @@
     "name": "Minifigure, Torso Assembly, Decor.",
     "count": 4949,
     "sources": {
-      "Rebrickable": 4787,
-      "BrickLink": 162
+      "Rebrickable": 4789,
+      "BrickLink": 160
     }
   },
   {
@@ -1193,9 +1192,9 @@
   {
     "id": "27",
     "name": "Plate, Modified",
-    "count": 170,
+    "count": 171,
     "sources": {
-      "Rebrickable": 135,
+      "Rebrickable": 136,
       "BrickLink": 35
     }
   },
@@ -1399,15 +1398,6 @@
     "sources": {
       "Rebrickable": 3,
       "BrickLink": 5
-    }
-  },
-  {
-    "id": "160",
-    "name": "Sticker Sheet",
-    "count": 3403,
-    "sources": {
-      "Rebrickable": 3383,
-      "BrickLink": 20
     }
   },
   {
@@ -1628,8 +1618,8 @@
     "name": "Tile, Decorated",
     "count": 2039,
     "sources": {
-      "Rebrickable": 1870,
-      "BrickLink": 169
+      "Rebrickable": 2000,
+      "BrickLink": 39
     }
   },
   {

@@ -13,6 +13,10 @@
     @apply bg-slate-50;
   }
 
+  body > #portal {
+    @apply absolute z-10;
+  }
+
   .bm-clickable {
     @apply hover:-translate-y-0.5 active:translate-y-0;
   }

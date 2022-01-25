@@ -1,7 +1,10 @@
-export function keyBy<T>(objects: T[], field: keyof T): { [key: string]: T } {
+export function keyBy<T>(
+  objects: T[],
+  field: keyof T | ((object: T) => string)
+): { [key: string]: T } {
   const map: { [key: string]: T } = {};
   for (const object of objects) {
-    const key = String(object[field]);
+    const key = typeof field === "function" ? field(object) : String(object[field]);
     if (!key) continue;
     map[key] = object;
   }

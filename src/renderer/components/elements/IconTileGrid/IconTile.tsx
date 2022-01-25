@@ -19,7 +19,7 @@ export function IconTile(props: IconTileProps) {
       to={to}
       className={clsx(
         "block text-lg w-40 lg:w-48 aspect-square rounded shadow-lg",
-        "bg-lego-yellow hover:opacity-80 transition-all",
+        "bg-lego-yellow hover:opacity-80 transition",
         "flex flex-col justify-center items-center text-center",
         "bm-focusable ring bm-clickable"
       )}

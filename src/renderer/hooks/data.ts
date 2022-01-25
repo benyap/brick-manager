@@ -1,17 +1,12 @@
-import { IColor, ICategory, IPartWithColors } from "~/models";
+import { IColor, IPartWithColors } from "~/types";
 import { useResource } from "~/components/core/ResourceProvider";
 
-export function useParts(query?: string): IPartWithColors[] {
-  const { data, search } = useResource("parts");
-  return query ? search.search(query).map((result) => result.item) : data;
+export function usePartSearch(query?: string): IPartWithColors[] {
+  const { list, search } = useResource("parts");
+  return query ? search.search(query).map((result) => result.item) : list;
 }
 
-export function useColors(query?: string): IColor[] {
-  const { data, search } = useResource("colors");
-  return query ? search.search(query).map((result) => result.item.color) : data;
-}
-
-export function useCategoryById(id: string): ICategory | undefined {
-  const { byId } = useResource("categories");
-  return byId[id];
+export function useColorSearch(query?: string): IColor[] {
+  const { list, search } = useResource("colors");
+  return query ? search.search(query).map((result) => result.item.color) : list;
 }

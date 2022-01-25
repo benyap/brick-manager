@@ -1,5 +1,6 @@
 import { version as VERSION } from "../../version.json";
 
-const NAME = "Brick Manager";
+export const ID = "brick-manager";
+export const NAME = "Brick Manager";
 
-export { NAME, VERSION };
+export { VERSION };

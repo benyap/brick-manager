@@ -22,7 +22,7 @@ export function SideBarItem(props: SideBarItemProps) {
       className={clsx(
         "p-3 lg:px-5 lg:py-3",
         "flex items-center justify-center lg:justify-start",
-        "uppercase font-semibold text-lg text-lego-navy rounded transition-all",
+        "uppercase font-semibold text-lg text-lego-navy rounded transition",
         "hover:bg-white hover:bg-opacity-40 bm-clickable bm-focusable ring",
         { "bg-white bg-opacity-40": onPath }
       )}

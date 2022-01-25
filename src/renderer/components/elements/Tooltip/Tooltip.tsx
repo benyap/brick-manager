@@ -91,7 +91,12 @@ export function Tooltip(props: TooltipProps) {
 
   return (
     <>
-      <div ref={target} onMouseOver={showTooltip} onMouseLeave={hideTooltip}>
+      <div
+        className="inline"
+        ref={target}
+        onMouseOver={showTooltip}
+        onMouseLeave={hideTooltip}
+      >
         {children}
       </div>
       {createPortal(

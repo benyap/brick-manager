@@ -1,4 +1,4 @@
-import { Vendor, IColor, VendorMap } from "~/models";
+import { Vendor, IColor, VendorMap } from "~/types";
 
 import { writeData } from "./utils/data";
 import { RebrickableAPI } from "./rebrickable/api";
@@ -24,7 +24,7 @@ async function main() {
   const rawData = await api.getAllPages(api.colors);
 
   const data = rawData
-    .filter(({ id }) => id >= 0)
+    .filter(({ id }) => id >= 0 && id !== 9999)
     .filter(({ external_ids }) => external_ids.BrickLink || external_ids.LEGO)
     .map<IColor>(({ id, name, external_ids, is_trans, rgb }) => {
       const BrickLink = getVendorColorInfo("BrickLink", external_ids);

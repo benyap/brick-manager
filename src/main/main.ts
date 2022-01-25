@@ -1,7 +1,8 @@
-import { BrowserWindow, app, shell } from "electron";
 import { join } from "path";
+import { BrowserWindow, app, shell, MenuItemConstructorOptions } from "electron";
+import contextMenu from "electron-context-menu";
 
-import { initStore } from "./init/db";
+import "./ipc";
 
 // Entry point of Electron app
 
@@ -14,8 +15,34 @@ function createWindow() {
     minWidth: 800,
     minHeight: 600,
     webPreferences: {
+      spellcheck: true,
       contextIsolation: false,
       nodeIntegration: true,
+    },
+  });
+
+  contextMenu({
+    menu(actions, props, window, dictionary) {
+      const items: MenuItemConstructorOptions[] = dictionary;
+
+      items.push(actions.separator());
+      items.push(actions.lookUpSelection({}));
+      items.push(actions.searchWithGoogle({}));
+      items.push(actions.separator());
+      items.push(actions.cut({}));
+      items.push(actions.copy({}));
+      items.push(actions.paste({}));
+      items.push(actions.separator());
+      items.push(actions.copyImage({}));
+      items.push(actions.saveImage({}));
+      items.push(actions.saveImageAs({}));
+
+      if (process.env.NODE_ENV === "development") {
+        items.push(actions.separator());
+        items.push(actions.inspect());
+      }
+
+      return items;
     },
   });
 
@@ -31,7 +58,6 @@ function createWindow() {
 }
 
 app.on("ready", () => {
-  initStore();
   createWindow();
 });
 

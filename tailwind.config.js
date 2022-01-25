@@ -17,6 +17,8 @@ module.exports = {
           DEFAULT: "#d01012",
         },
         "lego-navy": {
+          200: "#797791",
+          300: "#4D4A6D",
           DEFAULT: "#201d48",
         },
       },

@@ -1,6 +1,4 @@
-import { nanoid } from "nanoid";
-
-import { ICategory, IPart, Vendor } from "~/models";
+import { ICategory, IPart, Vendor } from "~/types";
 
 import { unique } from "./utils/list";
 import { writeData } from "./utils/data";
@@ -38,6 +36,7 @@ const categoriesToSkip = new Set([
   "1039", // Tile, Promotional
   "600", // Town Plan
   "152", // Znap
+  "160", // Sticker sheets
 ]);
 
 const patternsToIgnore: RegExp[] = [
@@ -147,7 +146,7 @@ async function main() {
   for (const part of brickLinkPartsToAdd) {
     addToCategory(part.categoryId, "BrickLink");
     parts.push({
-      id: nanoid(),
+      id: part.id,
       categoryId: part.categoryId,
       name: part.name,
       source: "BrickLink",

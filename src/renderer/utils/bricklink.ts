@@ -12,8 +12,7 @@ export class BrickLinkScraper {
       });
   }
 
-  getPartImages(id: string) {
-    const controller = new AbortController();
+  getPartImages(id: string, controller: AbortController = new AbortController()) {
     const url = this.partUrl(id);
     const promise = this.getPageSource(url, controller.signal).then((source) => {
       const re = new RegExp(`img\\.bricklink\\.com/[\\w/]+/${id}\\.png`, "gi");

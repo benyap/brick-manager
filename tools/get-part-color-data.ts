@@ -1,4 +1,4 @@
-import { IPart, IPartColors } from "~/models";
+import { IPart, IPartColors } from "~/types";
 
 import { getData, writeData } from "./utils/data";
 import { RebrickableAPI } from "./rebrickable/api";

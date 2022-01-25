@@ -1,4 +1,4 @@
-import { VendorMap } from "~/models/Vendor";
+import { VendorMap } from "~/types";
 
 export interface PaginatedResponse<T> {
   count: number;

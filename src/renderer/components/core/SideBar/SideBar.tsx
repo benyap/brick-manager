@@ -18,7 +18,7 @@ export function SideBar() {
           <Link
             to="/"
             className={clsx(
-              "flex flex-col items-center justify-center p-1 lg:p-3 rounded bm-clickable transition-all",
+              "flex flex-col items-center justify-center p-1 lg:p-3 rounded bm-clickable transition",
               "hover:bg-white hover:bg-opacity-40 bm-focusable ring"
             )}
           >
@@ -42,7 +42,7 @@ export function SideBar() {
             <ExternalLink
               href="https://github.com/benyap/brick-manager"
               className={clsx(
-                "text-lego-navy text-opacity-50 -ml-1 px-1 transition-all",
+                "text-lego-navy text-opacity-50 -ml-1 px-1 transition",
                 "hover:text-opacity-70 rounded bm-focusable ring-2"
               )}
             >

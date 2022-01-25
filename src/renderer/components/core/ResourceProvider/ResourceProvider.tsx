@@ -1,27 +1,32 @@
 import { createContext, useContext, useEffect, useState } from "react";
 import { Transition } from "@headlessui/react";
+import { Low } from "lowdb";
 import Fuse from "fuse.js";
 
-import { ICategory, IColor, IPartWithColors } from "~/models";
-
-import { loadParts } from "./loaders/parts";
-import { loadCategories } from "./loaders/categories";
-import { loadColors } from "./loaders/colors";
+import { DatabaseSchema, ICategory, IColor, IPartWithColors } from "~/types";
+import { loadParts, loadCategories, loadColors, loadDatabase } from "~/loaders";
+import { InventoryLoader, InventoryItemLoader } from "~/models";
 
 export interface IResource {
   parts?: {
-    data: IPartWithColors[];
+    list: IPartWithColors[];
+    byId: { [id: string]: IPartWithColors };
     search: Fuse<IPartWithColors>;
   };
   categories?: {
-    data: ICategory[];
+    list: ICategory[];
     byId: { [id: string]: ICategory };
     search: Fuse<ICategory>;
   };
   colors?: {
-    data: IColor[];
+    list: IColor[];
     byId: { [id: string]: IColor };
     search: Fuse<{ color: IColor }>;
+  };
+  database?: Low<DatabaseSchema>;
+  loaders?: {
+    inventory: InventoryLoader;
+    inventoryItems: InventoryItemLoader;
   };
 }
 
@@ -34,7 +39,7 @@ export function useResource<T extends keyof IResource>(
 ): NonNullable<IResource[T]> {
   const resource = useContext(ResourceContext)[key];
   if (!resource) throw new Error(`Resource not loaded: ${key}`);
-  return resource!; // eslint-disable-line @typescript-eslint/no-non-null-assertion
+  return resource!;
 }
 
 export interface ResourceProviderProps {
@@ -51,13 +56,25 @@ export function ResourceProvider(props: ResourceProviderProps) {
 
   useEffect(() => {
     if (state) return;
+
     async function load() {
+      // Load static data
       const state: IResource = {};
       state.parts = await loadParts();
       state.categories = await loadCategories();
       state.colors = await loadColors();
+
+      // Load database
+      const database = await loadDatabase();
+      state.database = database;
+      state.loaders = {
+        inventory: await new InventoryLoader(database).load(),
+        inventoryItems: await new InventoryItemLoader(database).load(),
+      };
+
       setState(state);
     }
+
     Promise.all([
       load(),
       new Promise((resolve) => setTimeout(resolve, DEV ? 0 : minimumWait)),

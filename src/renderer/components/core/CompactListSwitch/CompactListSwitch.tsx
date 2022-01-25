@@ -5,11 +5,11 @@ export interface CompactListSwitchProps {
   className?: string;
   compact?: boolean;
   onChange?: (compact: boolean) => void;
-  label?: React.ReactNode;
+  label?: string;
 }
 
 export function CompactListSwitch(props: CompactListSwitchProps) {
-  const { className, compact, onChange, label } = props;
+  const { className, compact, onChange, label = "" } = props;
   return (
     <Switch.Group as="div" className={clsx("flex items-center", className)}>
       {label && (
@@ -17,7 +17,7 @@ export function CompactListSwitch(props: CompactListSwitchProps) {
           as="span"
           className={clsx(
             "mr-3 text-sm font-medium text-right select-none whitespace-nowrap cursor-pointer",
-            "text-lego-navy text-opacity-80  hover:text-opacity-60 transition-opacity"
+            "text-lego-navy-300  hover:text-lego-navy-200 transition-opacity"
           )}
         >
           {label}

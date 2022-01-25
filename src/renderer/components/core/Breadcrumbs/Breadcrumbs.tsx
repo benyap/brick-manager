@@ -15,8 +15,8 @@ export function Breadcrumbs() {
         to="/"
         className={clsx(
           "uppercase tracking-widest px-1 text-sm font-medium ",
-          "text-lego-navy text-opacity-80 transition-all",
-          "hover:text-opacity-60 rounded bm-focusable ring-2"
+          "text-lego-navy-300 transition",
+          "hover:text-lego-navy-200 rounded bm-focusable ring-2"
         )}
       >
         Dashboard
@@ -35,8 +35,8 @@ export function Breadcrumbs() {
               to={partialPath.slice(1)}
               className={clsx(
                 "uppercase tracking-widest px-1 text-sm font-medium",
-                "text-lego-navy text-opacity-80 transition-all",
-                "hover:text-opacity-60 rounded bm-focusable ring-2"
+                "text-lego-navy-300 transition",
+                "hover:text-lego-navy-200 rounded bm-focusable ring-2"
               )}
             >
               {segment}
@@ -46,7 +46,7 @@ export function Breadcrumbs() {
         parts.push(
           <div
             key={segment + "-separator"}
-            className="uppercase tracking-widest text-sm text-lego-navy text-opacity-80 font-medium px-3"
+            className="uppercase tracking-widest text-sm text-lego-navy-300 font-medium px-3"
           >
             /
           </div>
@@ -55,7 +55,7 @@ export function Breadcrumbs() {
         parts.push(
           <div
             key={segment}
-            className="uppercase tracking-widest text-sm font-bold text-lego-navy text-opacity-80"
+            className="uppercase tracking-widest text-sm font-bold text-lego-navy-300"
           >
             {segment}
           </div>

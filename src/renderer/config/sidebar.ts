@@ -7,8 +7,8 @@ export const sidebar: SideBarItemProps[] = [
     icon: "PackageIcon",
   },
   {
-    name: "Builds",
-    to: "/builds",
+    name: "Collections",
+    to: "/collections",
     icon: "PuzzleIcon",
   },
   {

@@ -1,5 +1,4 @@
-import { Routes } from "react-router-dom";
-import { HashRouter, Route } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 
 import SideBar from "./components/core/SideBar";
 import SplashScreen from "./components/core/SplashScreen";
@@ -11,24 +10,24 @@ import DatabaseView, {
   ColorsView,
 } from "./components/views/DatabaseView";
 import InventoryView from "./components/views/InventoryView";
-import BuildsView from "./components/views/BuildsView";
+import CollectionsView from "./components/views/CollectionsView";
 
 export function App() {
   return (
-    <HashRouter>
-      <ResourceProvider loadingScreen={<SplashScreen />}>
+    <ResourceProvider loadingScreen={<SplashScreen />}>
+      <HashRouter>
         <Routes>
           <Route element={<SideBar />}>
             <Route path="/" element={<DashboardView />} />
             <Route path="inventory" element={<InventoryView />}></Route>
-            <Route path="builds" element={<BuildsView />}></Route>
+            <Route path="collections" element={<CollectionsView />}></Route>
             <Route path="database" element={<DatabaseView />}>
               <Route path="parts" element={<PartsView />} />
               <Route path="colors" element={<ColorsView />} />
             </Route>
           </Route>
         </Routes>
-      </ResourceProvider>
-    </HashRouter>
+      </HashRouter>
+    </ResourceProvider>
   );
 }

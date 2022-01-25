@@ -3434,19 +3434,5 @@
         }
       ]
     }
-  },
-  {
-    "id": "9999",
-    "name": "(Not Applicable)",
-    "material": "solid",
-    "rgb": "#05131D",
-    "identifiers": {
-      "BrickLink": [
-        {
-          "id": "0",
-          "name": "(Not Applicable)"
-        }
-      ]
-    }
   }
 ]
